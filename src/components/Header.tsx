@@ -20,11 +20,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
               <div className="w-4 h-4 bg-primary-foreground rounded-sm"></div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary">VAPE LOUNGE</h1>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">VAPE NATION</h1>
               <p className="text-sm text-muted-foreground">NAIROBI</p>
             </div>
           </div>
