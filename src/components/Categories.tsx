@@ -62,7 +62,7 @@ const Categories = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
             🗂️ SHOP BY CATEGORY
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -75,9 +75,9 @@ const Categories = () => {
           <h3 className="text-2xl font-bold mb-8">Product Types</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {productTypes.map((type, index) => (
-              <Card key={index} className="relative overflow-hidden hover:scale-105 transition-transform">
+              <Card key={index} className="relative overflow-hidden hover:scale-105 transition-all border-primary/20 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/20">
                 {type.popular && (
-                  <Badge className="absolute top-4 left-4 z-10 bg-destructive text-destructive-foreground">
+                  <Badge className="absolute top-4 left-4 z-10 bg-gradient-to-r from-destructive to-accent text-white shadow-lg">
                     🔥 POPULAR
                   </Badge>
                 )}
@@ -89,8 +89,8 @@ const Categories = () => {
                   />
                   <CardTitle className="text-xl mb-3">{type.name}</CardTitle>
                   <p className="text-muted-foreground mb-4">{type.description}</p>
-                  <p className="text-primary font-semibold mb-4">{type.products}</p>
-                  <Button>Shop Now</Button>
+                  <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-semibold mb-4">{type.products}</p>
+                  <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">Shop Now</Button>
                 </CardContent>
               </Card>
             ))}

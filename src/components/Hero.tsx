@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center pt-20 pb-16"
+      className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden"
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
@@ -41,16 +41,17 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-background/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-8xl font-bold mb-4">
-            <span className="text-primary">VAPE</span>{" "}
-            <span className="text-foreground">LOUNGE</span>
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 relative">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">VAPE</span>{" "}
+            <span className="text-foreground">NATION</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
             NAIROBI
           </h2>
           
@@ -64,10 +65,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="px-8 py-6 text-lg">
+            <Button size="lg" className="px-8 py-6 text-lg bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg shadow-primary/25 transition-all">
               🛍️ SHOP NOW
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
+            <Button variant="outline" size="lg" className="px-8 py-6 text-lg border-2 border-primary/50 hover:bg-primary/10">
               🗂️ BROWSE CATEGORIES
             </Button>
           </div>
@@ -75,7 +76,7 @@ const Hero = () => {
           {/* Featured Products */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {featuredProducts.map((product, index) => (
-              <Card key={index} className="bg-card/90 backdrop-blur border-border hover:scale-105 transition-transform">
+              <Card key={index} className="bg-card/95 backdrop-blur border-primary/20 hover:scale-105 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/20 transition-all">
                 <CardContent className="p-6 text-center">
                   <img 
                     src={product.image} 
@@ -83,7 +84,7 @@ const Hero = () => {
                     className="w-20 h-20 mx-auto mb-4 object-contain"
                   />
                   <h3 className="font-bold text-card-foreground mb-2">{product.name}</h3>
-                  <p className="text-primary font-bold text-lg">{product.price}</p>
+                  <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold text-lg">{product.price}</p>
                 </CardContent>
               </Card>
             ))}
@@ -92,11 +93,11 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              <div key={index} className="text-center group">
+                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
                   {stat.number}
                 </div>
-                <div className="text-foreground">{stat.label}</div>
+                <div className="text-muted-foreground group-hover:text-foreground transition-colors">{stat.label}</div>
               </div>
             ))}
           </div>
