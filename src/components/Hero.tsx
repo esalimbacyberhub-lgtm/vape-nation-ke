@@ -57,10 +57,33 @@ const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground mb-4 font-semibold">
-            Kenya's Premier Online Vape Store
+            Premium Vape Delivery in Nairobi
           </p>
-          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Head Office: Yaya / Kilimani, Nairobi | Delivery: Nairobi & Nationwide
+          <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+            Located in Kilimani / Yaya, we provide fast same-day delivery of authentic vapes, pods, disposable devices, juices, and accessories.
+            We only stock 100% original products from trusted global brands — no fakes, no knockoffs.
+          </p>
+          <p className="text-base text-muted-foreground mb-4 max-w-2xl mx-auto">
+            Whether you're new to vaping or a seasoned user, we help you choose the perfect flavor and device for your style.
+          </p>
+          <div className="bg-card/60 backdrop-blur rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-primary/20">
+            <div className="flex flex-col md:flex-row gap-2 text-sm text-foreground">
+              <span className="flex items-center gap-1">
+                <span className="text-primary">🚚</span> Same-day delivery: Kilimani, Lavington, Kileleshwa, Westlands, Karen, Ngong Road & CBD
+              </span>
+            </div>
+            <div className="flex flex-col md:flex-row gap-2 text-sm text-foreground mt-2">
+              <span className="flex items-center gap-1">
+                <span className="text-primary">🇰🇪</span> Nationwide shipping: Mombasa, Kisumu, Nakuru, Eldoret & more
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-foreground mt-2 justify-center">
+              <span className="text-primary">📞</span>
+              <span>Call / WhatsApp: <a href="tel:0742405841" className="text-primary font-semibold hover:underline">0742405841</a></span>
+            </div>
+          </div>
+          <p className="text-lg font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-8">
+            💨 Vape smart. Vape original. Vape Nation KE.
           </p>
 
           {/* CTA Buttons */}
