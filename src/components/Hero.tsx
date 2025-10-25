@@ -52,7 +52,7 @@ const Hero = () => {
             <span className="text-foreground">NATION</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6">
-            NAIROBI
+            KE
           </h2>
           
           {/* Subtitle */}
@@ -60,7 +60,7 @@ const Hero = () => {
             Kenya's Premier Online Vape Store
           </p>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Shop authentic vaping products with fast delivery across Kenya. From disposables to premium mods - we have everything you need.
+            Head Office: Yaya / Kilimani, Nairobi | Delivery: Nairobi & Nationwide
           </p>
 
           {/* CTA Buttons */}

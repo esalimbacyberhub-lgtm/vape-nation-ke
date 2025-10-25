@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">VISIT OUR STORE</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Located at Yaya Center in Nairobi, our flagship store offers the complete Vape Nation experience with expert staff and premium products.
+              Head Office: Yaya / Kilimani, Nairobi | Delivery: Nairobi & Nationwide. Our flagship store offers the complete Vape Nation experience with expert staff and premium products.
             </p>
           </div>
 
@@ -23,14 +23,15 @@ const Contact = () => {
             <div>
               <Card className="mb-8">
                 <CardHeader>
-                  <CardTitle className="text-2xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">VAPE NATION NAIROBI</CardTitle>
+                  <CardTitle className="text-2xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">VAPE NATION KE</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p className="text-muted-foreground">Yaya Center, Nairobi, Kenya</p>
+                      <p className="text-muted-foreground">Head Office: Yaya / Kilimani, Nairobi</p>
+                      <p className="text-muted-foreground text-sm">Delivery: Nairobi & Nationwide</p>
                     </div>
                   </div>
                   
@@ -58,8 +59,8 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:info@vapenationnairobi.co.ke" className="text-primary hover:underline">
-                        info@vapenationnairobi.co.ke
+                      <a href="mailto:info@vapenationke.co.ke" className="text-primary hover:underline">
+                        info@vapenationke.co.ke
                       </a>
                     </div>
                   </div>
@@ -218,7 +219,7 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <Mail className="h-8 w-8 text-primary mx-auto mb-3" />
                     <h4 className="font-semibold mb-2">Email</h4>
-                    <p className="text-primary font-bold">info@vapenationnairobi.co.ke</p>
+                    <p className="text-primary font-bold">info@vapenationke.co.ke</p>
                     <p className="text-sm text-muted-foreground">Send us a detailed message</p>
                   </CardContent>
                 </Card>
@@ -227,8 +228,8 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <Store className="h-8 w-8 text-primary mx-auto mb-3" />
                     <h4 className="font-semibold mb-2">Visit Store</h4>
-                    <p className="text-primary font-bold">Yaya Center, Nairobi</p>
-                    <p className="text-sm text-muted-foreground">Come see us in person</p>
+                    <p className="text-primary font-bold">Yaya / Kilimani, Nairobi</p>
+                    <p className="text-sm text-muted-foreground">Delivery: Nairobi & Nationwide</p>
                   </CardContent>
                 </Card>
               </div>
