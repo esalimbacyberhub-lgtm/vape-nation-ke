@@ -59,8 +59,8 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:info@vapenationke.co.ke" className="text-primary hover:underline">
-                        info@vapenationke.co.ke
+                      <a href="mailto:vapenation.co.ke" className="text-primary hover:underline">
+                        vapenation.co.ke
                       </a>
                     </div>
                   </div>
@@ -217,7 +217,7 @@ const Contact = () => {
                   <CardContent className="p-6 text-center">
                     <Mail className="h-8 w-8 text-primary mx-auto mb-3" />
                     <h4 className="font-semibold mb-2">Email</h4>
-                    <p className="text-primary font-bold">info@vapenationke.co.ke</p>
+                    <p className="text-primary font-bold">vapenation.co.ke</p>
                     <p className="text-sm text-muted-foreground">Send us a detailed message</p>
                   </CardContent>
                 </Card>
