@@ -62,7 +62,14 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground">
+          <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground space-y-3">
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+              <span>•</span>
+              <a href="/delivery-policy" className="hover:text-primary transition-colors">Delivery & Shipping</a>
+              <span>•</span>
+              <a href="/refund-policy" className="hover:text-primary transition-colors">Refund & Replacement</a>
+            </div>
             <p>&copy; {new Date().getFullYear()} Vape Nation KE. All rights reserved.</p>
           </div>
         </div>
