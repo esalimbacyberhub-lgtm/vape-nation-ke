@@ -8,13 +8,16 @@ const Footer = () => {
           {/* Brand */}
           <h3 className="text-3xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Vape Nation KE
+              Vape Nation KE – The City's Vape Plug
             </span>
           </h3>
           
           {/* Description */}
-          <p className="text-lg text-foreground mb-2 font-semibold">
-            Premium Vape Delivery • Kilimani / Yaya, Nairobi
+          <p className="text-lg text-foreground mb-4 font-semibold leading-relaxed">
+            We deliver authentic vapes & flavors straight to your spot — fast.
+          </p>
+          <p className="text-base text-muted-foreground mb-4">
+            No fakes. No low-quality clones. Only top-tier brands and fire flavors.
           </p>
           
           {/* Contact Info */}
@@ -46,11 +49,15 @@ const Footer = () => {
           <div className="space-y-2 text-sm text-muted-foreground">
             <p className="flex items-center justify-center gap-2">
               <span className="text-primary">🚚</span>
-              <span>Same-day delivery in Nairobi</span>
+              <span>Same-day delivery: Kilimani, Lavington, Kileleshwa, Westlands, Parklands, CBD & more</span>
             </p>
             <p className="flex items-center justify-center gap-2">
-              <span className="text-primary">🇰🇪</span>
+              <span className="text-primary">📦</span>
               <span>Nationwide shipping available</span>
+            </p>
+            <p className="flex items-center justify-center gap-2">
+              <span className="text-primary">💬</span>
+              <span>WhatsApp to Order: 0742405841</span>
             </p>
           </div>
 

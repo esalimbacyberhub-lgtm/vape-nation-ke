@@ -13,12 +13,16 @@ const VapeDeliveryEldoret = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Vape Delivery in Eldoret
+                Vape Delivery in Eldoret | Vape Nation KE
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We ship original vapes to Eldoret with next-day delivery.
-              Order disposable vapes, pods, juices & accessories with safe packaging and fast shipping.
+            <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+              Looking for vapes in Eldoret? We got you.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Order original disposable vapes, pods & accessories and get fast delivery to Eldoret town and surrounding areas.
+              <br />
+              No fakes. No cheap clones. Just clean flavor and original devices.
             </p>
             
             <div className="mt-12">

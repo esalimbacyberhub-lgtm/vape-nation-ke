@@ -13,12 +13,16 @@ const VapeDeliveryNakuru = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Vape Delivery in Nakuru
+                Vape Delivery in Nakuru | Vape Nation KE
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We ship original vapes to Nakuru with next-day delivery.
-              Order disposable vapes, pods, juices & accessories with safe packaging and fast shipping.
+            <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
+              Looking for vapes in Nakuru? We got you.
+            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Order original disposable vapes, pods & accessories and get fast delivery to Nakuru town and surrounding areas.
+              <br />
+              No fakes. No cheap clones. Just clean flavor and original devices.
             </p>
             
             <div className="mt-12">

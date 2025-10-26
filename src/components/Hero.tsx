@@ -57,7 +57,7 @@ const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground mb-4 font-semibold">
-            Premium Vape Delivery in Nairobi
+            Premium Vape Delivery in Nairobi • Kilimani HQ • Same-Day Delivery
           </p>
           <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
             Located in Kilimani / Yaya, we provide fast same-day delivery of authentic vapes, pods, disposable devices, juices, and accessories.

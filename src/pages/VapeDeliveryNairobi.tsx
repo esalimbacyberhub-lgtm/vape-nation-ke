@@ -23,13 +23,12 @@ const VapeDeliveryNairobi = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Vape Delivery in Nairobi
+                Vape Delivery in Nairobi – Fast & Reliable
               </span>
-              <br />
-              <span className="text-3xl md:text-4xl text-foreground">Fast & Reliable</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Vape Nation KE offers same-day vape delivery anywhere in Nairobi from our base in Kilimani / Yaya.
+              <br />
               Order premium disposable vapes, vape pens, pods, salts & accessories delivered to your door in minutes.
             </p>
           </div>
