@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">VAPE NATION</h1>
-              <p className="text-sm text-muted-foreground">NAIROBI</p>
+              <p className="text-sm text-muted-foreground">KE</p>
             </div>
           </div>
 
