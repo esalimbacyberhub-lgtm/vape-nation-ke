@@ -41,7 +41,7 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/35 to-background"></div>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">

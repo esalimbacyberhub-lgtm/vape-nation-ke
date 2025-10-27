@@ -6,49 +6,50 @@
 
 @layer base {
   :root {
-    --background: 222 15% 8%;
-    --foreground: 210 40% 98%;
+    --background: 216 22% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 18% 14%;
-    --card-foreground: 210 40% 98%;
+    --card: 228 15% 13%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 18% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 228 15% 13%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 330 90% 60%;
-    --primary-foreground: 222 15% 8%;
+    --primary: 330 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 18% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 228 15% 20%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 18% 14%;
-    --muted-foreground: 215 20% 70%;
+    --muted: 228 15% 13%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 280 95% 68%;
-    --accent-foreground: 222 15% 8%;
+    --accent: 275 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 18% 22%;
-    --input: 220 18% 18%;
-    --ring: 330 90% 60%;
+    --border: 228 15% 22%;
+    --input: 228 15% 18%;
+    --ring: 330 100% 50%;
 
     --radius: 0.875rem;
     
     /* Modern premium vape store colors */
-    --vape-magenta: 330 90% 60%;
-    --vape-magenta-light: 330 90% 75%;
-    --vape-purple: 280 95% 68%;
-    --vape-purple-dark: 280 70% 45%;
-    --vape-dark: 222 15% 8%;
-    --vape-card: 220 18% 14%;
-    --vape-text: 210 40% 98%;
+    --vape-magenta: 330 100% 50%;
+    --vape-magenta-light: 330 100% 75%;
+    --vape-purple: 275 100% 50%;
+    --vape-purple-dark: 275 70% 35%;
+    --vape-dark: 216 22% 5%;
+    --vape-card: 228 15% 13%;
+    --vape-text: 0 0% 100%;
+    --vape-glow: 163 100% 50%;
     
     /* Premium gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(330 90% 60%) 0%, hsl(310 85% 65%) 50%, hsl(280 95% 68%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 18% 14%) 0%, hsl(220 18% 10%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(222 15% 8%) 0%, hsl(220 18% 12%) 50%, hsl(222 15% 8%) 100%);
+    --gradient-primary: linear-gradient(90deg, hsl(330 100% 50%) 0%, hsl(275 100% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(228 15% 13%) 0%, hsl(228 15% 10%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(216 22% 5%) 0%, hsl(228 15% 12%) 50%, hsl(216 22% 5%) 100%);
 
     --sidebar-background: 0 0% 98%;
 
@@ -68,33 +69,33 @@
   }
 
   .dark {
-    --background: 222 15% 8%;
-    --foreground: 210 40% 98%;
+    --background: 216 22% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 220 18% 14%;
-    --card-foreground: 210 40% 98%;
+    --card: 228 15% 13%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 220 18% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 228 15% 13%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 330 90% 60%;
-    --primary-foreground: 222 15% 8%;
+    --primary: 330 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 18% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 228 15% 20%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 18% 14%;
-    --muted-foreground: 215 20% 70%;
+    --muted: 228 15% 13%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 280 95% 68%;
-    --accent-foreground: 222 15% 8%;
+    --accent: 275 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 18% 22%;
-    --input: 220 18% 18%;
-    --ring: 330 90% 60%;
+    --border: 228 15% 22%;
+    --input: 228 15% 18%;
+    --ring: 330 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
