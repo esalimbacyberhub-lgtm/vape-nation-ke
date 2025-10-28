@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroBg from "@/assets/hero-bg.png";
+import vapeNationLogo from "@/assets/vape-nation-logo.png";
 import vapenginJupiter from "@/assets/vapengin-jupiter.png";
 import lostMaryMt15000 from "@/assets/lost-mary-mt15000.png";
 import soloBar50k from "@/assets/solo-bar-50k.png";
@@ -42,6 +43,17 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/35 to-background"></div>
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${vapeNationLogo})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.25,
+          filter: 'blur(4px)'
+        }}
+      ></div>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">

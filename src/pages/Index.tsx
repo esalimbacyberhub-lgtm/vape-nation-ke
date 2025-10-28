@@ -7,6 +7,7 @@ import Products from "@/components/Products";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingActionButtons from "@/components/FloatingActionButtons";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <Gallery />
       <Contact />
       <Footer />
+      <FloatingActionButtons />
     </div>
   );
 };
