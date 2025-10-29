@@ -25,27 +25,27 @@ const FloatingActionButtons = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
+          className="w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in text-white"
           style={{
-            background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
-            boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)',
+            background: '#8A2BE2',
+            boxShadow: '0 0 18px rgba(138, 43, 226, 0.7)',
             opacity: loaded ? 1 : 0,
             transform: loaded ? 'translateY(0)' : 'translateY(15px)'
           }}
           title="Back to Top"
           aria-label="Scroll to top"
         >
-          ⬆️
+          <i className="fa-solid fa-arrow-up text-[22px]"></i>
         </button>
       )}
 
       {/* Call Button */}
       <a 
         href="tel:+254742405841"
-        className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
+        className="w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in text-white"
         style={{
-          background: 'linear-gradient(90deg, #FF00CC, #8A2BE2)',
-          boxShadow: '0 0 18px rgba(255, 0, 255, 0.7)',
+          background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
+          boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)',
           opacity: loaded ? 1 : 0,
           transform: loaded ? 'translateY(0)' : 'translateY(15px)',
           animationDelay: '0.2s'
@@ -53,7 +53,7 @@ const FloatingActionButtons = () => {
         title="Call Vape Nation KE"
         aria-label="Call Vape Nation KE"
       >
-        📞
+        <i className="fa-solid fa-phone text-[22px]"></i>
       </a>
 
       {/* WhatsApp Button */}
@@ -61,10 +61,10 @@ const FloatingActionButtons = () => {
         href="https://wa.me/254742405841" 
         target="_blank"
         rel="noopener noreferrer"
-        className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
+        className="whatsapp-btn w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in text-white"
         style={{
-          background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
-          boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)',
+          background: '#25D366',
+          boxShadow: '0 0 18px rgba(37, 211, 102, 0.7)',
           opacity: loaded ? 1 : 0,
           transform: loaded ? 'translateY(0)' : 'translateY(15px)',
           animationDelay: '0.4s'
@@ -72,7 +72,7 @@ const FloatingActionButtons = () => {
         title="Chat on WhatsApp"
         aria-label="Chat on WhatsApp"
       >
-        💬
+        <i className="fa-brands fa-whatsapp text-[22px]"></i>
       </a>
     </div>
   );
