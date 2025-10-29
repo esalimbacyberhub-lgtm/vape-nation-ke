@@ -24,7 +24,7 @@ const FloatingActionButtons = () => {
         href="https://wa.me/254742405841" 
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 z-[9999] flex items-center justify-center rounded-full p-5 transition-all duration-300 ease-in-out animate-pulse-glow hover:scale-110"
+        className="fixed bottom-5 right-5 z-[9999] flex items-center gap-3 rounded-full px-6 py-4 transition-all duration-300 ease-in-out animate-pulse-glow hover:scale-105"
         style={{
           background: 'linear-gradient(135deg, #25D366, #128C7E)',
           boxShadow: '0 0 35px rgba(37, 211, 102, 0.9), 0 4px 15px rgba(0, 0, 0, 0.5)',
@@ -32,7 +32,8 @@ const FloatingActionButtons = () => {
         }}
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-9 h-9 text-white" strokeWidth={2.5} />
+        <MessageCircle className="w-7 h-7 text-white" strokeWidth={2.5} />
+        <span className="text-white font-bold text-base whitespace-nowrap">Order on WhatsApp</span>
       </a>
 
       {/* Call Button */}
