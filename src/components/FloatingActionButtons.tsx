@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import { ArrowUp, Phone, MessageCircle } from "lucide-react";
 
 const FloatingActionButtons = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    setLoaded(true);
+    
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 200);
     };
@@ -18,53 +20,61 @@ const FloatingActionButtons = () => {
   };
 
   return (
-    <>
+    <div className="fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 md:gap-4">
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
+          style={{
+            background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
+            boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)',
+            opacity: loaded ? 1 : 0,
+            transform: loaded ? 'translateY(0)' : 'translateY(15px)'
+          }}
+          title="Back to Top"
+          aria-label="Scroll to top"
+        >
+          ⬆️
+        </button>
+      )}
+
+      {/* Call Button */}
+      <a 
+        href="tel:+254742405841"
+        className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
+        style={{
+          background: 'linear-gradient(90deg, #FF00CC, #8A2BE2)',
+          boxShadow: '0 0 18px rgba(255, 0, 255, 0.7)',
+          opacity: loaded ? 1 : 0,
+          transform: loaded ? 'translateY(0)' : 'translateY(15px)',
+          animationDelay: '0.2s'
+        }}
+        title="Call Vape Nation KE"
+        aria-label="Call Vape Nation KE"
+      >
+        📞
+      </a>
+
       {/* WhatsApp Button */}
       <a 
         href="https://wa.me/254742405841" 
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 z-[9999] flex items-center gap-3 rounded-full px-6 py-4 transition-all duration-300 ease-in-out animate-pulse-glow hover:scale-105"
+        className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in"
         style={{
-          background: 'linear-gradient(135deg, #25D366, #128C7E)',
-          boxShadow: '0 0 35px rgba(37, 211, 102, 0.9), 0 4px 15px rgba(0, 0, 0, 0.5)',
-          border: '3px solid rgba(255, 255, 255, 0.9)'
+          background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
+          boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)',
+          opacity: loaded ? 1 : 0,
+          transform: loaded ? 'translateY(0)' : 'translateY(15px)',
+          animationDelay: '0.4s'
         }}
+        title="Chat on WhatsApp"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7 text-white" strokeWidth={2.5} />
-        <span className="text-white font-bold text-base whitespace-nowrap">Order on WhatsApp</span>
+        💬
       </a>
-
-      {/* Call Button */}
-      <a 
-        href="tel:+254742405841"
-        className="fixed bottom-[105px] right-5 z-[9998] flex items-center justify-center rounded-full p-5 transition-all duration-300 ease-in-out animate-pulse-glow hover:scale-110"
-        style={{
-          background: 'linear-gradient(135deg, #FF00CC, #B5179E)',
-          boxShadow: '0 0 35px rgba(255, 0, 204, 0.9), 0 4px 15px rgba(0, 0, 0, 0.5)',
-          border: '3px solid rgba(255, 255, 255, 0.9)'
-        }}
-        aria-label="Call Vape Nation KE"
-      >
-        <Phone className="w-9 h-9 text-white" strokeWidth={2.5} />
-      </a>
-
-      {/* Scroll to Top Button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-5 left-5 z-[9999] flex items-center justify-center rounded-full p-3.5 transition-all duration-300 ease-in-out hover:scale-110"
-          style={{
-            background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
-            boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)'
-          }}
-          aria-label="Scroll to top"
-        >
-          <ArrowUp className="w-7 h-7 text-white" />
-        </button>
-      )}
-    </>
+    </div>
   );
 };
 
