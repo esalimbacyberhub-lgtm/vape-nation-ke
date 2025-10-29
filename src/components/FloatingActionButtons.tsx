@@ -1,4 +1,22 @@
+import { useState, useEffect } from "react";
+import { ArrowUp } from "lucide-react";
+
 const FloatingActionButtons = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {/* WhatsApp Button */}
@@ -36,6 +54,21 @@ const FloatingActionButtons = () => {
           className="w-7 h-7 brightness-0 invert"
         />
       </a>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-5 left-5 z-[9999] flex items-center justify-center rounded-full p-3.5 transition-all duration-300 ease-in-out hover:scale-110"
+          style={{
+            background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
+            boxShadow: '0 0 18px rgba(181, 23, 158, 0.7)'
+          }}
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-7 h-7 text-white" />
+        </button>
+      )}
     </>
   );
 };
