@@ -20,8 +20,27 @@ const FloatingActionButtons = () => {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 md:gap-4">
-      {/* Scroll to Top Button */}
+    <>
+      {/* Shop Now Button - Left Side */}
+      <a
+        href="#products"
+        className="fixed bottom-[100px] left-5 z-[9999] flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-base transition-all duration-300 ease-in-out hover:scale-105 animate-pulse-glow text-white"
+        style={{
+          background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
+          boxShadow: '0 0 18px rgba(181, 23, 158, 0.6)',
+          opacity: loaded ? 1 : 0,
+          transform: loaded ? 'translateY(0)' : 'translateY(15px)'
+        }}
+        title="Shop Premium Vapes"
+        aria-label="Shop Now"
+      >
+        <i className="fa-solid fa-cart-shopping text-[18px]"></i>
+        <span>Shop Now</span>
+      </a>
+
+      {/* Right Side Buttons */}
+      <div className="fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 md:gap-4">
+        {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
           onClick={scrollToTop}
@@ -74,7 +93,8 @@ const FloatingActionButtons = () => {
       >
         <i className="fa-brands fa-whatsapp text-[22px]"></i>
       </a>
-    </div>
+      </div>
+    </>
   );
 };
 
