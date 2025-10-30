@@ -21,18 +21,12 @@ import soloBar50kPineapple from "/lovable-uploads/4c878e46-7368-475a-aa82-95bb6a
 const Products = () => {
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const filterOptions = [
-    { id: "all", label: "All Products (73)" },
-    { id: "disposables", label: "Disposables (60)" },
-    { id: "pods", label: "Pods / Refill Kits (23)" },
-  ];
-
-  const brandFilters = [
-    "All Brands", "KK", "Lost Mary", "Nasty", "Elfbar", "Nimbox", "Vapegin", "Solo Bar"
-  ];
-
-  const puffFilters = [
-    "All Puff Counts", "5K", "8K - 10K", "13K - 15K", "20K - 25K", "50K+"
+  const categoryFilters = [
+    { id: "all", label: "All", icon: "🛍️" },
+    { id: "disposable", label: "Disposable Vapes", icon: "💨" },
+    { id: "juice", label: "Vape Juice", icon: "💧" },
+    { id: "pods", label: "Pod Kits", icon: "🔋" },
+    { id: "accessories", label: "Accessories", icon: "🔌" },
   ];
 
   const products = [
@@ -45,6 +39,7 @@ const Products = () => {
       image: "/lovable-uploads/747c8f0a-7574-4902-9e96-4b5ddd8262e1.png",
       popular: true,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 2,
@@ -55,6 +50,7 @@ const Products = () => {
       image: "/lovable-uploads/1092c0d1-480a-40db-81e6-a2f5db7a93b4.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 3,
@@ -65,6 +61,7 @@ const Products = () => {
       image: "/lovable-uploads/5edd589d-bc6c-4c97-8ff4-176e0d34883f.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 4,
@@ -75,6 +72,7 @@ const Products = () => {
       image: "/lovable-uploads/d48ff870-863c-41ad-9c23-3ad3dc56616b.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 5,
@@ -85,6 +83,7 @@ const Products = () => {
       image: "/lovable-uploads/cfe2ec05-22f3-4cc7-bd5b-9a33444c72cc.png",
       popular: true,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 6,
@@ -95,6 +94,7 @@ const Products = () => {
       image: "/lovable-uploads/cf9ed17b-fa87-4ad2-b681-341fa9b3b944.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 7,
@@ -105,6 +105,7 @@ const Products = () => {
       image: "/lovable-uploads/ef689076-2ebe-4f81-b9aa-d7de2790a284.png",
       popular: true,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 8,
@@ -115,6 +116,7 @@ const Products = () => {
       image: "/lovable-uploads/a9d5fd3e-4e84-4bcd-83df-6d56ee347777.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 9,
@@ -125,6 +127,7 @@ const Products = () => {
       image: "/lovable-uploads/436e7ada-b85f-497e-97f4-5835e8f1ca22.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 10,
@@ -135,6 +138,7 @@ const Products = () => {
       image: "/lovable-uploads/2d05463a-83a1-4af6-a3ef-86a473b64781.png",
       popular: false,
       badge: "5,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 11,
@@ -145,6 +149,7 @@ const Products = () => {
       image: "/lovable-uploads/b302ec8b-6487-4aa2-94b2-11700261939b.png",
       popular: true,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 12,
@@ -155,6 +160,7 @@ const Products = () => {
       image: "/lovable-uploads/0b78fc31-9f7f-4c94-9134-b8e80bd87415.png",
       popular: false,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 13,
@@ -165,6 +171,7 @@ const Products = () => {
       image: "/lovable-uploads/c5d372be-f8c8-4c28-ac30-578e00293ff0.png",
       popular: true,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 14,
@@ -175,6 +182,7 @@ const Products = () => {
       image: "/lovable-uploads/fc19e16a-0fa7-4a06-9371-d9a00b587e09.png",
       popular: true,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 15,
@@ -185,6 +193,7 @@ const Products = () => {
       image: "/lovable-uploads/53ea2f50-00d1-4917-bcf7-819e91d2510c.png",
       popular: false,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 16,
@@ -195,6 +204,7 @@ const Products = () => {
       image: "/lovable-uploads/fc83fa96-51e6-4eda-81ed-039363247ba8.png",
       popular: false,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 17,
@@ -205,6 +215,7 @@ const Products = () => {
       image: "/lovable-uploads/441cf781-de19-4ee4-8228-5c8a3e67c28a.png",
       popular: true,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 18,
@@ -215,6 +226,7 @@ const Products = () => {
       image: "/lovable-uploads/b24efa37-e53e-4e3a-ac7e-0c1c2cd2b18f.png",
       popular: false,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 19,
@@ -225,6 +237,7 @@ const Products = () => {
       image: "/lovable-uploads/5df69fd6-1d38-474d-a4c0-c88560751cbd.png",
       popular: false,
       badge: "⚡ 15K PUFFS",
+      category: "disposable",
     },
     {
       id: 20,
@@ -235,6 +248,7 @@ const Products = () => {
       image: nastyBrand,
       popular: true,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 21,
@@ -245,6 +259,7 @@ const Products = () => {
       image: nastyBrand,
       popular: false,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 22,
@@ -255,6 +270,7 @@ const Products = () => {
       image: nastyBrand,
       popular: true,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 23,
@@ -265,6 +281,7 @@ const Products = () => {
       image: nastyBrand,
       popular: false,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 24,
@@ -275,6 +292,7 @@ const Products = () => {
       image: nastyBrand,
       popular: true,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 25,
@@ -285,6 +303,7 @@ const Products = () => {
       image: nastyBrand,
       popular: false,
       badge: "🔥 20K PUFFS",
+      category: "disposable",
     },
     {
       id: 26,
@@ -295,6 +314,7 @@ const Products = () => {
       image: "/lovable-uploads/782b0e4c-bab1-44b7-862f-90fc37a4cea0.png",
       popular: true,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 27,
@@ -305,6 +325,7 @@ const Products = () => {
       image: "/lovable-uploads/81ba8447-0825-44dd-919a-ec6631749463.png",
       popular: false,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 28,
@@ -315,6 +336,7 @@ const Products = () => {
       image: "/lovable-uploads/aafa3f08-8cb5-4e72-b594-613b6d59ed01.png",
       popular: true,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 29,
@@ -325,6 +347,7 @@ const Products = () => {
       image: "/lovable-uploads/ca1fca51-7867-484f-9fd5-65272c74f4cb.png",
       popular: false,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 30,
@@ -335,6 +358,7 @@ const Products = () => {
       image: "/lovable-uploads/9a86ba16-3168-465d-8c46-08cb7e4c4d57.png",
       popular: true,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 31,
@@ -345,6 +369,7 @@ const Products = () => {
       image: "/lovable-uploads/653d0d3f-31d4-4f8c-bc8d-ec6a947ec796.png",
       popular: true,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 32,
@@ -355,6 +380,7 @@ const Products = () => {
       image: "/lovable-uploads/2b239531-c01b-4817-9abe-ac1edf0b1d43.png",
       popular: false,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 33,
@@ -365,6 +391,7 @@ const Products = () => {
       image: "/lovable-uploads/26b350e9-747d-44fd-bf03-0488cb0806f9.png",
       popular: false,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 34,
@@ -375,6 +402,7 @@ const Products = () => {
       image: "/lovable-uploads/867ad413-ab36-45f4-a411-e779da1d2668.png",
       popular: true,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 35,
@@ -385,6 +413,7 @@ const Products = () => {
       image: "/lovable-uploads/1f7c6887-37c9-415c-a4a4-15f3fe2c8a18.png",
       popular: false,
       badge: "💨 25K+ PUFFS",
+      category: "disposable",
     },
     {
       id: 36,
@@ -395,6 +424,7 @@ const Products = () => {
       image: berryBlendsFlavor,
       popular: false,
       badge: "🎯 10K PUFFS",
+      category: "disposable",
     },
     {
       id: 37,
@@ -405,6 +435,7 @@ const Products = () => {
       image: fruitFusionFlavor,
       popular: true,
       badge: "🎯 10K PUFFS",
+      category: "disposable",
     },
     {
       id: 38,
@@ -415,6 +446,7 @@ const Products = () => {
       image: berryBlendsFlavor,
       popular: false,
       badge: "🎯 10K PUFFS",
+      category: "disposable",
     },
     {
       id: 39,
@@ -425,6 +457,7 @@ const Products = () => {
       image: fruitFusionFlavor,
       popular: false,
       badge: "🎯 10K PUFFS",
+      category: "disposable",
     },
     {
       id: 40,
@@ -435,6 +468,7 @@ const Products = () => {
       image: fruitFusionFlavor,
       popular: true,
       badge: "🎯 10K PUFFS",
+      category: "disposable",
     },
     {
       id: 40,
@@ -445,6 +479,7 @@ const Products = () => {
       image: "/lovable-uploads/0a5911c7-040b-4935-a1b3-00d510523d0a.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 41,
@@ -455,6 +490,7 @@ const Products = () => {
       image: "/lovable-uploads/a061db2e-908b-4d3c-9c09-5f13a63426e3.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 42,
@@ -465,6 +501,7 @@ const Products = () => {
       image: "/lovable-uploads/f00ac36b-a30a-4f98-a813-f9a2f3121d70.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 43,
@@ -475,6 +512,7 @@ const Products = () => {
       image: "/lovable-uploads/c3897fb6-af61-4776-bc9c-b0dcf63bdd26.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 44,
@@ -485,6 +523,7 @@ const Products = () => {
       image: "/lovable-uploads/59fdeac3-3d3c-408e-b11d-3189a83493bc.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 45,
@@ -495,6 +534,7 @@ const Products = () => {
       image: "/lovable-uploads/4290acc7-4dec-4b95-9667-fb902cac4fa3.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 46,
@@ -505,6 +545,7 @@ const Products = () => {
       image: "/lovable-uploads/db6ee762-8c8f-4fad-87f3-58cd6c4838a3.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 47,
@@ -515,6 +556,7 @@ const Products = () => {
       image: "/lovable-uploads/763a2625-75eb-4baf-bfef-e06292fefb32.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 48,
@@ -525,6 +567,7 @@ const Products = () => {
       image: "/lovable-uploads/74ad30d2-c068-48cb-a47d-46352403a66e.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 49,
@@ -535,6 +578,7 @@ const Products = () => {
       image: iceMintFlavor,
       popular: true,
       badge: "💎 13K PUFFS",
+      category: "disposable",
     },
     {
       id: 50,
@@ -545,6 +589,7 @@ const Products = () => {
       image: berryBlendsFlavor,
       popular: false,
       badge: "💎 13K PUFFS",
+      category: "disposable",
     },
     {
       id: 51,
@@ -555,6 +600,7 @@ const Products = () => {
       image: berryBlendsFlavor,
       popular: true,
       badge: "💎 13K PUFFS",
+      category: "disposable",
     },
     {
       id: 52,
@@ -565,6 +611,7 @@ const Products = () => {
       image: "/lovable-uploads/2c84d98a-5ff6-4e73-9a7a-1dff18d5961f.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 53,
@@ -575,6 +622,7 @@ const Products = () => {
       image: "/lovable-uploads/fa83e05f-3170-4798-bff1-a5449b58b06c.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 54,
@@ -585,6 +633,7 @@ const Products = () => {
       image: "/lovable-uploads/2594f9d7-2799-497e-b35f-2d10a80b90f4.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 55,
@@ -595,6 +644,7 @@ const Products = () => {
       image: "/lovable-uploads/2d70b8e8-56f4-46cd-bb67-bd1ff9f8e14e.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 56,
@@ -605,6 +655,7 @@ const Products = () => {
       image: "/lovable-uploads/e56fa967-91ce-4323-bb41-ba7155cd61d3.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 57,
@@ -615,6 +666,7 @@ const Products = () => {
       image: "/lovable-uploads/c4ee1979-eff7-44cc-bbf7-da2df276ec2b.png",
       popular: true,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 58,
@@ -625,6 +677,7 @@ const Products = () => {
       image: "/lovable-uploads/e9f115dc-4093-49fe-b93a-bdff6ea9616b.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 59,
@@ -635,6 +688,7 @@ const Products = () => {
       image: "/lovable-uploads/3866fac5-dba9-4b80-8e04-25ddbc518669.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 60,
@@ -645,6 +699,7 @@ const Products = () => {
       image: "/lovable-uploads/ba34c818-6b99-4846-be6b-43baf2c10038.png",
       popular: false,
       badge: "9,000 PUFFS",
+      category: "disposable",
     },
     {
       id: 61,
@@ -655,6 +710,7 @@ const Products = () => {
       image: soloBar50kBlueRazz,
       popular: true,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 62,
@@ -665,6 +721,7 @@ const Products = () => {
       image: soloBar50kWhiteGummy,
       popular: true,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 63,
@@ -675,6 +732,7 @@ const Products = () => {
       image: soloBar50kPineapple,
       popular: false,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 64,
@@ -685,6 +743,7 @@ const Products = () => {
       image: soloBar50k,
       popular: false,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 65,
@@ -695,6 +754,7 @@ const Products = () => {
       image: soloBar50k,
       popular: true,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 66,
@@ -705,6 +765,7 @@ const Products = () => {
       image: soloBar50kWatermelon,
       popular: true,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
     {
       id: 67,
@@ -715,60 +776,39 @@ const Products = () => {
       image: soloBar50kJuicyPeach,
       popular: false,
       badge: "🚀 50K PUFFS",
+      category: "disposable",
     },
   ];
 
+  const filteredProducts = products.filter(product => 
+    activeFilter === "all" || product.category === activeFilter
+  );
+
   return (
-    <section id="shop" className="py-16 bg-muted/20">
+    <section id="shop" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">PREMIUM PRODUCTS</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            🔥 Shop Premium Vapes
+          </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Discover our extensive collection of authentic vaping products from leading international brands.
+            Fast delivery in Nairobi, Lavington, Westlands & nationwide 🇰🇪
           </p>
         </div>
 
-        {/* Filters */}
-        <div className="mb-8 space-y-4">
-          {/* Product Type Filters */}
-          <div className="flex flex-wrap gap-2 justify-center">
-            {filterOptions.map((option) => (
+        {/* Category Filters */}
+        <div className="mb-12">
+          <div className="flex flex-wrap gap-3 justify-center">
+            {categoryFilters.map((category) => (
               <Button
-                key={option.id}
-                variant={activeFilter === option.id ? "default" : "outline"}
-                onClick={() => setActiveFilter(option.id)}
-                className="text-sm"
+                key={category.id}
+                variant={activeFilter === category.id ? "default" : "outline"}
+                onClick={() => setActiveFilter(category.id)}
+                className="font-semibold rounded-full px-6 transition-all duration-300"
               >
-                {option.label}
-              </Button>
-            ))}
-          </div>
-
-          {/* Brand Filters */}
-          <div className="flex flex-wrap gap-2 justify-center">
-            {brandFilters.map((brand) => (
-              <Button
-                key={brand}
-                variant="ghost"
-                size="sm"
-                className="text-xs"
-              >
-                {brand}
-              </Button>
-            ))}
-          </div>
-
-          {/* Puff Count Filters */}
-          <div className="flex flex-wrap gap-2 justify-center">
-            {puffFilters.map((puff) => (
-              <Button
-                key={puff}
-                variant="ghost"
-                size="sm"
-                className="text-xs"
-              >
-                {puff}
+                <span className="mr-2">{category.icon}</span>
+                {category.label}
               </Button>
             ))}
           </div>
@@ -776,8 +816,8 @@ const Products = () => {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => (
-            <Card key={product.id} className="relative overflow-hidden hover:scale-105 transition-transform group">
+          {filteredProducts.map((product) => (
+            <Card key={product.id} className="relative overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-400 group bg-card border-border">
               {product.popular && (
                 <Badge className="absolute top-3 left-3 z-10 bg-destructive text-destructive-foreground">
                   🔥 POPULAR
@@ -791,13 +831,21 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-20 h-20 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform"
+                  className="w-full h-48 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform rounded-lg"
                 />
-                <h3 className="font-bold text-lg mb-2 line-clamp-2">{product.name}</h3>
+                <h3 className="font-bold text-lg mb-2 line-clamp-2 text-foreground">{product.name}</h3>
                 <div className="text-sm text-muted-foreground mb-1">{product.puffs}</div>
                 <div className="text-sm text-muted-foreground mb-4">{product.flavor}</div>
-                <div className="text-xl font-bold text-primary mb-4">{product.price}</div>
-                <Button className="w-full">Add to Cart</Button>
+                <div className="text-2xl font-bold text-primary mb-4">{product.price}</div>
+                <a
+                  href={`https://wa.me/254742405841?text=I'm%20interested%20in%20${encodeURIComponent(product.name)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                >
+                  <i className="fa-brands fa-whatsapp text-lg"></i>
+                  Order Now
+                </a>
               </CardContent>
             </Card>
           ))}
