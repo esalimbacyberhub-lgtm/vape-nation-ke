@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,14 @@ const VapeDeliveryNairobi = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vape Delivery Nairobi | Fast Same-Day Vape Delivery in Nairobi | Vape Nation KE</title>
+        <meta 
+          name="description" 
+          content="Fast vape delivery in Nairobi. Order premium vapes, pods & e-liquids with same-day delivery in Kilimani, Westlands, CBD, Lavington & more. Call 0742405841." 
+        />
+        <meta name="keywords" content="vape delivery Nairobi, vapes Nairobi, same-day vape delivery, Kilimani vape, Westlands vape shop, CBD vape delivery" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

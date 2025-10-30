@@ -7,8 +7,8 @@ const DeliveryPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Delivery & Shipping Policy | Vape Nation KE</title>
-        <meta name="description" content="Fast delivery across Nairobi and nationwide shipping in Kenya. Learn about our delivery and shipping process." />
+        <title>Delivery & Shipping Policy | Vape Nation KE - Fast Nationwide Delivery</title>
+        <meta name="description" content="Vape Nation KE delivery policy: Same-day delivery in Nairobi & nationwide shipping across Kenya. Learn about delivery times, areas, and shipping charges." />
       </Helmet>
       
       <Header />

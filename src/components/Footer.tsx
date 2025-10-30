@@ -61,6 +61,25 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* Local SEO Section */}
+          <div className="mt-8 pt-8 border-t border-primary/10">
+            <h4 className="text-xl font-bold mb-4 text-foreground">
+              Serving All Major Areas in Kenya
+            </h4>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Vape Nation KE proudly delivers authentic vapes, pods, and e-liquids across Kenya. 
+              Whether you're in <strong>Nairobi, Kilimani, Lavington, Kileleshwa, Westlands, Parklands, Ngong, Karen, or Thika</strong>, 
+              we've got you covered with fast same-day delivery.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto mt-3">
+              We also serve <strong>Mombasa, Kisumu, Nakuru, Eldoret</strong>, and other major towns nationwide — 
+              bringing you trusted vape products wherever you are.
+            </p>
+            <p className="text-sm font-semibold text-foreground mt-4">
+              💨 Order online today and enjoy Kenya's #1 vape delivery service with Vape Nation KE.
+            </p>
+          </div>
+
           {/* Copyright */}
           <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground space-y-3">
             <div className="flex flex-wrap items-center justify-center gap-4">

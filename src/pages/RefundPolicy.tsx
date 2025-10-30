@@ -7,8 +7,8 @@ const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Refund & Replacement Policy | Vape Nation KE</title>
-        <meta name="description" content="Learn about our refund and replacement policy for authentic vape products in Kenya." />
+        <title>Refund & Replacement Policy | Vape Nation KE - Customer Protection</title>
+        <meta name="description" content="Vape Nation KE refund & replacement policy. Learn about our product quality guarantee, replacement process for defective items, and customer protection policies." />
       </Helmet>
       
       <Header />

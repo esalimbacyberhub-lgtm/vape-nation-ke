@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,14 @@ import { Phone } from "lucide-react";
 const VapeDeliveryMombasa = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vape Delivery Mombasa | Order Vapes in Mombasa | Vape Nation KE</title>
+        <meta 
+          name="description" 
+          content="Buy premium vapes in Mombasa. Fast delivery of original disposable vapes, pods & e-liquids across Mombasa. Order now via WhatsApp 0742405841." 
+        />
+        <meta name="keywords" content="vape delivery Mombasa, vapes Mombasa, buy vapes Mombasa coast, Mombasa vape shop, vape store Mombasa" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card/30">

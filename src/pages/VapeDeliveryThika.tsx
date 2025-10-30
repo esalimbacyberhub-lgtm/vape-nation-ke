@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,14 @@ import { Phone } from "lucide-react";
 const VapeDeliveryThika = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vape Delivery Thika | Buy Vapes in Thika | Vape Nation KE</title>
+        <meta 
+          name="description" 
+          content="Order premium vapes in Thika. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Thika. Call 0742405841." 
+        />
+        <meta name="keywords" content="vape delivery Thika, vapes Thika, buy vapes Thika, vape shop Thika, vape store Thika Kenya" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card/30">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,14 @@ import { Phone } from "lucide-react";
 const VapeDeliveryKisumu = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vape Delivery Kisumu | Buy Vapes in Kisumu | Vape Nation KE</title>
+        <meta 
+          name="description" 
+          content="Order premium vapes in Kisumu. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Kisumu. Call 0742405841." 
+        />
+        <meta name="keywords" content="vape delivery Kisumu, vapes Kisumu, buy vapes Kisumu, vape shop Kisumu, vape store Kisumu Kenya" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card/30">

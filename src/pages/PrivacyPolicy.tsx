@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Privacy Policy | Vape Nation KE</title>
-        <meta name="description" content="Privacy policy for Vape Nation KE - Learn how we protect your personal information." />
+        <title>Privacy Policy | Vape Nation KE - Your Data Protection</title>
+        <meta name="description" content="Read Vape Nation KE's privacy policy. Learn how we collect, use, and protect your personal information when you shop with Kenya's trusted vape store." />
       </Helmet>
       
       <Header />

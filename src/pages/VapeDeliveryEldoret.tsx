@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,14 @@ import { Phone } from "lucide-react";
 const VapeDeliveryEldoret = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Vape Delivery Eldoret | Order Vapes in Eldoret | Vape Nation KE</title>
+        <meta 
+          name="description" 
+          content="Buy premium vapes in Eldoret. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Eldoret. Call 0742405841." 
+        />
+        <meta name="keywords" content="vape delivery Eldoret, vapes Eldoret, buy vapes Eldoret, vape shop Eldoret, vape store Eldoret Kenya" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card/30">
