@@ -68,8 +68,8 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <a href="mailto:vapenation.co.ke" className="text-primary hover:underline">
-                        vapenation.co.ke
+                      <a href="mailto:info@vapenationke.co.ke" className="text-primary hover:underline">
+                        info@vapenationke.co.ke
                       </a>
                     </div>
                   </div>

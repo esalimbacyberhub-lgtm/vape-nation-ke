@@ -39,9 +39,9 @@ const Footer = () => {
               <span>WhatsApp Available</span>
             </a>
             <span className="hidden sm:inline">|</span>
-            <a href="mailto:vapenation.co.ke" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:info@vapenationke.co.ke" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="h-4 w-4" />
-              <span>vapenation.co.ke</span>
+              <span>info@vapenationke.co.ke</span>
             </a>
           </div>
 
