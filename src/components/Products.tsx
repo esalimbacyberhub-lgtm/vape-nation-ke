@@ -795,6 +795,11 @@ const Products = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Fast delivery in Nairobi, Lavington, Westlands & nationwide 🇰🇪
           </p>
+          <div className="mt-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-sm text-amber-900 dark:text-amber-200">
+              📦 <strong>Note:</strong> Delivery charges are not included in product prices. Delivery fees may vary depending on your location.
+            </p>
+          </div>
         </div>
 
         {/* Category Filters */}
