@@ -471,7 +471,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 40,
+      id: 41,
       name: "Elfbar 9K Cherry Strazz",
       puffs: "9000 Puffs",
       flavor: "Cherry Strazz",
@@ -482,7 +482,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 41,
+      id: 42,
       name: "Elfbar 9K Miami Mint",
       puffs: "9000 Puffs",
       flavor: "Miami Mint",
@@ -493,7 +493,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 42,
+      id: 43,
       name: "Elfbar 9K Lime",
       puffs: "9000 Puffs",
       flavor: "Lime",
@@ -504,7 +504,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 43,
+      id: 44,
       name: "Elfbar 9K Blue Razz",
       puffs: "9000 Puffs",
       flavor: "Blue Razz",
@@ -515,7 +515,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 44,
+      id: 45,
       name: "Elfbar 9K Sour Lush",
       puffs: "9000 Puffs",
       flavor: "Sour Lush",
@@ -526,7 +526,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 45,
+      id: 46,
       name: "Elfbar 9K Grape",
       puffs: "9000 Puffs",
       flavor: "Grape",
@@ -537,7 +537,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 46,
+      id: 47,
       name: "Elfbar 9K Watermelon",
       puffs: "9000 Puffs",
       flavor: "Watermelon",
@@ -548,7 +548,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 47,
+      id: 48,
       name: "Elfbar 9K California Cherry",
       puffs: "9000 Puffs",
       flavor: "California Cherry",
@@ -559,7 +559,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 48,
+      id: 49,
       name: "Elfbar 9K Dragon Strawnana",
       puffs: "9000 Puffs",
       flavor: "Dragon Strawnana",
@@ -570,7 +570,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 49,
+      id: 50,
       name: "Vapegin Jupiter Plus 13K Mint Ice",
       puffs: "13000 Puffs",
       flavor: "Mint Ice",
@@ -581,7 +581,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 50,
+      id: 51,
       name: "Vapegin Jupiter Plus 13K Grape Ice",
       puffs: "13000 Puffs",
       flavor: "Grape Ice",
@@ -592,7 +592,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 51,
+      id: 52,
       name: "Vapegin Jupiter Plus 13K Sour Blue Rasp Ice",
       puffs: "13000 Puffs",
       flavor: "Sour Blue Rasp Ice",
@@ -603,7 +603,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 52,
+      id: 53,
       name: "Elfbar 9K Pod Double Mango",
       puffs: "9000 Puffs",
       flavor: "Double Mango",
@@ -614,7 +614,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 53,
+      id: 54,
       name: "Elfbar 9K Pod Grape",
       puffs: "9000 Puffs",
       flavor: "Grape",
@@ -625,7 +625,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 54,
+      id: 55,
       name: "Elfbar 9K Pod Miami Mint",
       puffs: "9000 Puffs",
       flavor: "Miami Mint",
@@ -636,7 +636,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 55,
+      id: 56,
       name: "Elfbar 9K Pod Cherry Straz",
       puffs: "9000 Puffs",
       flavor: "Cherry Straz",
@@ -647,7 +647,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 56,
+      id: 57,
       name: "Elfbar 9K Pod Sour Lush",
       puffs: "9000 Puffs",
       flavor: "Sour Lush",
@@ -658,7 +658,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 57,
+      id: 58,
       name: "Elfbar 9K Pod Strawberry Mango",
       puffs: "9000 Puffs",
       flavor: "Strawberry Mango",
@@ -669,7 +669,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 58,
+      id: 59,
       name: "Elfbar 9K Pod Watermelon",
       puffs: "9000 Puffs",
       flavor: "Watermelon",
@@ -680,7 +680,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 59,
+      id: 60,
       name: "Elfbar 9K Pod Blackberry Cherry Pomegranate",
       puffs: "9000 Puffs",
       flavor: "Blackberry Cherry Pomegranate",
@@ -691,7 +691,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 60,
+      id: 61,
       name: "Elfbar 9K Pod Blue Razz",
       puffs: "9000 Puffs",
       flavor: "Blue Razz",
@@ -702,7 +702,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 61,
+      id: 62,
       name: "Solo Bar 50K Blue Razz Ice",
       puffs: "50000 Puffs",
       flavor: "Blue Razz Ice",
@@ -713,7 +713,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 62,
+      id: 63,
       name: "Solo Bar 50K White Gummy Ice",
       puffs: "50000 Puffs",
       flavor: "White Gummy Ice",
@@ -724,7 +724,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 63,
+      id: 64,
       name: "Solo Bar 50K Pineapple Apple Pear",
       puffs: "50000 Puffs",
       flavor: "Pineapple Apple Pear",
@@ -735,7 +735,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 64,
+      id: 65,
       name: "Solo Bar 50K Sakura Grape",
       puffs: "50000 Puffs",
       flavor: "Sakura Grape",
@@ -746,7 +746,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 65,
+      id: 66,
       name: "Solo Bar 50K Strawberry Watermelon",
       puffs: "50000 Puffs",
       flavor: "Strawberry Watermelon",
@@ -757,7 +757,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 66,
+      id: 67,
       name: "Solo Bar 50K Watermelon Ice",
       puffs: "50000 Puffs",
       flavor: "Watermelon Ice",
@@ -768,7 +768,7 @@ const Products = () => {
       category: "disposable",
     },
     {
-      id: 67,
+      id: 68,
       name: "Solo Bar 50K Peach Berry Ice",
       puffs: "50000 Puffs",
       flavor: "Peach Berry Ice",
