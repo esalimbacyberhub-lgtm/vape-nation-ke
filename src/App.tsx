@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Auth from "./pages/Auth";
+import Admin from "./pages/Admin";
 import VapeDeliveryNairobi from "./pages/VapeDeliveryNairobi";
 import VapeDeliveryKisumu from "./pages/VapeDeliveryKisumu";
 import VapeDeliveryMombasa from "./pages/VapeDeliveryMombasa";
@@ -25,6 +27,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/vape-delivery-nairobi" element={<VapeDeliveryNairobi />} />
           <Route path="/vape-delivery-kisumu" element={<VapeDeliveryKisumu />} />
           <Route path="/vape-delivery-mombasa" element={<VapeDeliveryMombasa />} />

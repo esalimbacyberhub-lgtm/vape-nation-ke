@@ -44,6 +44,11 @@ const Header = () => {
 
           {/* Cart and Mobile Menu */}
           <div className="flex items-center space-x-4">
+            <Link to="/auth">
+              <Button variant="outline" size="sm" className="hidden md:inline-flex">
+                Admin
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
             </Button>
