@@ -8,12 +8,12 @@ const VapeDeliveryThika = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Thika | Buy Vapes in Thika | Vape Nation KE</title>
+        <title>Vape Delivery Thika | Buy Disposable Vapes Thika | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Order premium vapes in Thika. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Thika. Call 0742405841." 
+          content="Buy disposable vapes in Thika – Lost Mary, Elfbar & premium pods. Fast vape delivery Thika town. Kenya's trusted vape shop. Call 0742405841." 
         />
-        <meta name="keywords" content="vape delivery Thika, vapes Thika, buy vapes Thika, vape shop Thika, vape store Thika Kenya" />
+        <meta name="keywords" content="vape delivery Thika, disposable vapes Kenya, buy vapes Thika, Lost Mary Kenya, Elfbar Nairobi, vape shop Thika" />
       </Helmet>
       <Header />
       

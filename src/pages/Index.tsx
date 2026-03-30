@@ -14,12 +14,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Nation KE | Kenya's #1 Vape Shop – Buy Premium Vapes & Pods Online</title>
+        <title>Buy Vapes Nairobi | Disposable Vapes Kenya | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Vape Nation KE – Kenya's trusted vape shop. Buy vapes, pods & e-liquids with fast delivery across Nairobi, Mombasa, Kisumu & the entire Kenya." 
+          content="Buy vapes Nairobi – Lost Mary, Elfbar & top disposable vapes Kenya. Fast vape delivery Nairobi, Kilimani, Westlands. Kenya's #1 vape shop. Order now!" 
         />
-        <meta name="keywords" content="vape shop Kenya, buy vapes Nairobi, vape pods Kenya, e-liquids Kenya, Elf Bar Kenya, vape delivery Nairobi" />
+        <meta name="keywords" content="buy vapes Nairobi, disposable vapes Kenya, fast vape delivery Nairobi, best vapes Kilimani, vape shop Westlands, Lost Mary Kenya, Elfbar Nairobi, vape pods Kenya, e-liquids Kenya" />
       </Helmet>
       <Header />
       <Hero />

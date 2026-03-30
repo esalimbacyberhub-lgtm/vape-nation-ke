@@ -8,12 +8,12 @@ const VapeDeliveryEldoret = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Eldoret | Order Vapes in Eldoret | Vape Nation KE</title>
+        <title>Vape Delivery Eldoret | Buy Disposable Vapes Eldoret | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Buy premium vapes in Eldoret. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Eldoret. Call 0742405841." 
+          content="Buy disposable vapes in Eldoret – Lost Mary, Elfbar & premium vape pods. Fast delivery across Eldoret. Kenya's trusted vape shop. Call 0742405841." 
         />
-        <meta name="keywords" content="vape delivery Eldoret, vapes Eldoret, buy vapes Eldoret, vape shop Eldoret, vape store Eldoret Kenya" />
+        <meta name="keywords" content="vape delivery Eldoret, disposable vapes Kenya, buy vapes Eldoret, Lost Mary Kenya, Elfbar Nairobi, vape shop Eldoret" />
       </Helmet>
       <Header />
       

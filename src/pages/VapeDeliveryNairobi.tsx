@@ -17,7 +17,9 @@ const VapeDeliveryNairobi = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Nairobi | Fast Same-Day Vape Delivery in Nairobi | Vape Nation KE</title>
+        <title>Fast Vape Delivery Nairobi | Buy Disposable Vapes Nairobi | Vape Nation KE</title>
+        <meta name="description" content="Fast vape delivery Nairobi – same-day delivery in Kilimani, Westlands, Lavington & CBD. Buy Lost Mary, Elfbar & disposable vapes Kenya. Order via WhatsApp!" />
+        <meta name="keywords" content="fast vape delivery Nairobi, buy vapes Nairobi, disposable vapes Kenya, best vapes Kilimani, vape shop Westlands, Lost Mary Kenya, Elfbar Nairobi" />
         <meta 
           name="description" 
           content="Fast vape delivery in Nairobi. Order premium vapes, pods & e-liquids with same-day delivery in Kilimani, Westlands, CBD, Lavington & more. Call 0742405841." 
