@@ -8,12 +8,12 @@ const VapeDeliveryMombasa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Mombasa | Order Vapes in Mombasa | Vape Nation KE</title>
+        <title>Vape Delivery Mombasa | Buy Disposable Vapes Mombasa | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Buy premium vapes in Mombasa. Fast delivery of original disposable vapes, pods & e-liquids across Mombasa. Order now via WhatsApp 0742405841." 
+          content="Buy disposable vapes in Mombasa – Lost Mary, Elfbar & premium pods. Fast vape delivery Mombasa coast. Trusted vape shop Kenya. Call 0742405841." 
         />
-        <meta name="keywords" content="vape delivery Mombasa, vapes Mombasa, buy vapes Mombasa coast, Mombasa vape shop, vape store Mombasa" />
+        <meta name="keywords" content="vape delivery Mombasa, disposable vapes Kenya, buy vapes Mombasa, Lost Mary Kenya, Elfbar Nairobi, vape shop Mombasa" />
       </Helmet>
       <Header />
       

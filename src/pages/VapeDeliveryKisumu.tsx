@@ -8,12 +8,12 @@ const VapeDeliveryKisumu = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Kisumu | Buy Vapes in Kisumu | Vape Nation KE</title>
+        <title>Vape Delivery Kisumu | Buy Disposable Vapes Kisumu | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Order premium vapes in Kisumu. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Kisumu. Call 0742405841." 
+          content="Buy disposable vapes in Kisumu – Lost Mary, Elfbar & premium pods with fast delivery. Kenya's trusted vape shop. Order now – Call 0742405841." 
         />
-        <meta name="keywords" content="vape delivery Kisumu, vapes Kisumu, buy vapes Kisumu, vape shop Kisumu, vape store Kisumu Kenya" />
+        <meta name="keywords" content="vape delivery Kisumu, disposable vapes Kenya, buy vapes Kisumu, Lost Mary Kenya, Elfbar Nairobi, vape shop Kisumu" />
       </Helmet>
       <Header />
       

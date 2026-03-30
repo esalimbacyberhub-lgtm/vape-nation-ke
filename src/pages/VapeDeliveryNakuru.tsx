@@ -8,12 +8,12 @@ const VapeDeliveryNakuru = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Vape Delivery Nakuru | Buy Vapes in Nakuru | Vape Nation KE</title>
+        <title>Vape Delivery Nakuru | Buy Disposable Vapes Nakuru | Vape Nation KE</title>
         <meta 
           name="description" 
-          content="Order premium vapes in Nakuru. Fast delivery of authentic disposable vapes, pods & e-liquids. Trusted vape supplier in Nakuru. Call 0742405841." 
+          content="Buy disposable vapes in Nakuru – Lost Mary, Elfbar & premium vape pods. Fast delivery Nakuru town. Kenya's trusted vape shop. Call 0742405841." 
         />
-        <meta name="keywords" content="vape delivery Nakuru, vapes Nakuru, buy vapes Nakuru, vape shop Nakuru, vape store Nakuru Kenya" />
+        <meta name="keywords" content="vape delivery Nakuru, disposable vapes Kenya, buy vapes Nakuru, Lost Mary Kenya, Elfbar Nairobi, vape shop Nakuru" />
       </Helmet>
       <Header />
       

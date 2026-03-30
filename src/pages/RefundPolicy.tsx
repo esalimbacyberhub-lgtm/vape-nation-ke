@@ -7,8 +7,9 @@ const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Refund & Replacement Policy | Vape Nation KE - Customer Protection</title>
-        <meta name="description" content="Vape Nation KE refund & replacement policy. Learn about our product quality guarantee, replacement process for defective items, and customer protection policies." />
+        <title>Refund & Replacement Policy | Vape Nation KE – Trusted Vape Shop Kenya</title>
+        <meta name="description" content="Vape Nation KE refund policy – 100% original Lost Mary, Elfbar & disposable vapes Kenya. Quality guarantee on all products. Trusted vape shop Nairobi." />
+        <meta name="keywords" content="vape refund Kenya, disposable vapes Kenya, Lost Mary Kenya, Elfbar Nairobi, trusted vape shop Nairobi" />
       </Helmet>
       
       <Header />
