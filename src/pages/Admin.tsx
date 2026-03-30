@@ -8,6 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { toast } from "sonner";
 import { User, Session } from "@supabase/supabase-js";
 import { LogOut } from "lucide-react";
+import AdminBlogManager from "@/components/AdminBlogManager";
 
 interface Product {
   id: string;
@@ -202,6 +203,10 @@ const Admin = () => {
             </Table>
           </CardContent>
         </Card>
+
+        <div className="mt-8">
+          <AdminBlogManager />
+        </div>
       </div>
     </div>
   );
