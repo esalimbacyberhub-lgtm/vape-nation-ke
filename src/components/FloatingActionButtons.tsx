@@ -39,7 +39,7 @@ const FloatingActionButtons = () => {
       </a>
 
       {/* Right Side Buttons */}
-      <div className="fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 md:gap-4">
+      <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3 md:gap-4 pointer-events-auto">
         {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
