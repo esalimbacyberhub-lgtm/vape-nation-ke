@@ -157,7 +157,7 @@ const Products = () => {
                   </div>
 
                   <Button 
-                    className="w-full font-semibold group-hover:bg-primary group-hover:text-primary-foreground transition-all"
+                    className="w-full font-semibold group-hover:bg-primary group-hover:text-primary-foreground transition-all relative z-10"
                     onClick={() => handleWhatsAppOrder(product.name, product.price)}
                   >
                     Order on WhatsApp 💬

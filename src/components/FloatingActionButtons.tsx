@@ -24,7 +24,7 @@ const FloatingActionButtons = () => {
       {/* Shop Now Button - Left Side */}
       <a
         href="#products"
-        className="fixed bottom-[100px] left-5 z-[9999] flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-base transition-all duration-300 ease-in-out hover:scale-105 animate-pulse-glow text-white"
+        className="fixed bottom-[100px] left-5 z-50 flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-base transition-all duration-300 ease-in-out hover:scale-105 animate-pulse-glow text-white pointer-events-auto"
         style={{
           background: 'linear-gradient(90deg, #B5179E, #8A2BE2)',
           boxShadow: '0 0 18px rgba(181, 23, 158, 0.6)',
@@ -39,7 +39,7 @@ const FloatingActionButtons = () => {
       </a>
 
       {/* Right Side Buttons */}
-      <div className="fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 md:gap-4">
+      <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3 md:gap-4 pointer-events-auto">
         {/* Scroll to Top Button */}
       {showScrollTop && (
         <button
