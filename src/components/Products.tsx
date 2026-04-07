@@ -58,7 +58,7 @@ const Products = () => {
 
   const handleWhatsAppOrder = (productName: string, price: number) => {
     const message = `Hi! I'm interested in ordering ${productName} (KSH ${price.toLocaleString()})`;
-    const whatsappUrl = `https://wa.me/254797405980?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/254742405841?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
