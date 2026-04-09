@@ -80,7 +80,7 @@ const FloatingActionButtons = () => {
         href="https://wa.me/254742405841" 
         target="_blank"
         rel="noopener noreferrer"
-        className="whatsapp-btn w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in text-white"
+        className="whatsapp-btn w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in animate-pulse-glow text-white"
         style={{
           background: '#25D366',
           boxShadow: '0 0 18px rgba(37, 211, 102, 0.7)',
