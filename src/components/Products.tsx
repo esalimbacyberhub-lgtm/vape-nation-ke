@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { toast } from "sonner";
 
 interface Product {
