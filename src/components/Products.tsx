@@ -75,7 +75,7 @@ const Products = () => {
   }
 
   return (
-    <section id="shop" className="py-16 bg-background">
+    <section ref={ref} id="shop" className={`py-16 bg-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
