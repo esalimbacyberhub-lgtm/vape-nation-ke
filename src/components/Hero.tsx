@@ -8,6 +8,13 @@ import lostMaryMt15000 from "@/assets/lost-mary-mt15000.png";
 import soloBar50k from "@/assets/solo-bar-50k.png";
 
 const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
+
   const featuredProducts = [
     {
       name: "VAPENGIN JUPITER",
