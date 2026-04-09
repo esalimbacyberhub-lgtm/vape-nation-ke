@@ -20,6 +20,7 @@ interface Product {
 }
 
 const Products = () => {
+  const { ref, isVisible } = useScrollReveal();
   const [activeFilter, setActiveFilter] = useState("all");
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
