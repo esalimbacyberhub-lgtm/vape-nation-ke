@@ -107,7 +107,7 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className={`flex flex-col sm:flex-row gap-4 justify-center mb-12 transition-all duration-700 delay-500 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <Button size="lg" className="px-8 py-6 text-lg bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg shadow-primary/25 transition-all">
               🛍️ SHOP NOW
             </Button>
@@ -117,7 +117,7 @@ const Hero = () => {
           </div>
 
           {/* Featured Products */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 transition-all duration-700 delay-[600ms] ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {featuredProducts.map((product, index) => (
               <Card key={index} className="bg-card/95 backdrop-blur border-primary/20 hover:scale-105 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/20 transition-all">
                 <CardContent className="p-6 text-center">
