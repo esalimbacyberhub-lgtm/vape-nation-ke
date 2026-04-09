@@ -6,8 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { AlertDialog, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { MapPin, Phone, Mail, Clock, Car, Bus, Store, Navigation } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollReveal();
   const [showThankYou, setShowThankYou] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {

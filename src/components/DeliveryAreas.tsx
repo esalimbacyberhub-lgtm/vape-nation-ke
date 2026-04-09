@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const DeliveryAreas = () => {
+  const { ref, isVisible } = useScrollReveal();
   const areas = [
     "Kilimani (HQ)",
     "Yaya",

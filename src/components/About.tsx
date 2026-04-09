@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const About = () => {
+  const { ref, isVisible } = useScrollReveal();
   const features = [
     "We deliver fast — no long waiting.",
     "We only sell 100% legit products.",

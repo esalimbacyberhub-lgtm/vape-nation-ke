@@ -5,8 +5,10 @@ import vapenginJupiter from "@/assets/vapengin-jupiter.png";
 import soloBar50K from "@/assets/solo-bar-50k.png";
 import iceMintFlavor from "@/assets/ice-mint-flavor.png";
 import fruitFusionFlavor from "@/assets/fruit-fusion-flavor.png";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Gallery = () => {
+  const { ref, isVisible } = useScrollReveal();
   const galleryItems = [
     {
       title: "Premium Disposable Vapes Collection",
