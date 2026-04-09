@@ -76,17 +76,17 @@ const Hero = () => {
           </h2>
           
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-foreground mb-4 font-semibold">
+          <p className={`text-xl md:text-2xl text-foreground mb-4 font-semibold transition-all duration-700 delay-200 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Premium Vape Delivery in Nairobi • Kilimani HQ • Same-Day Delivery
           </p>
-          <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+          <p className={`text-lg text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed transition-all duration-700 delay-300 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Located in Kilimani / Yaya, we provide fast same-day delivery of authentic vapes, pods, disposable devices, juices, and accessories.
             We only stock 100% original products from trusted global brands — no fakes, no knockoffs.
           </p>
-          <p className="text-base text-muted-foreground mb-4 max-w-2xl mx-auto">
+          <p className={`text-base text-muted-foreground mb-4 max-w-2xl mx-auto transition-all duration-700 delay-[350ms] ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Whether you're new to vaping or a seasoned user, we help you choose the perfect flavor and device for your style.
           </p>
-          <div className="bg-card/60 backdrop-blur rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-primary/20">
+          <div className={`bg-card/60 backdrop-blur rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-primary/20 transition-all duration-700 delay-[400ms] ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex flex-col md:flex-row gap-2 text-sm text-foreground">
               <span className="flex items-center gap-1">
                 <span className="text-primary">🚚</span> Same-day delivery: Kilimani, Lavington, Kileleshwa, Westlands, Karen, Ngong Road & CBD
