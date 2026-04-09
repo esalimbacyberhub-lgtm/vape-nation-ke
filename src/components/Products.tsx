@@ -112,7 +112,7 @@ const Products = () => {
           {filteredProducts.map((product) => (
             <Card 
               key={product.id} 
-              className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 hover:border-primary"
+              className="group hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] transition-all duration-300 overflow-hidden border-2 hover:border-primary"
             >
               <CardContent className="p-0">
                 {/* Image Container */}
