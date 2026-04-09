@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const DeliveryAreas = () => {
+  const { ref, isVisible } = useScrollReveal();
   const areas = [
     "Kilimani (HQ)",
     "Yaya",
@@ -26,7 +28,7 @@ const DeliveryAreas = () => {
   ];
 
   return (
-    <section id="delivery" className="py-16 bg-gradient-to-b from-card/30 to-background">
+    <section ref={ref} id="delivery" className={`py-16 bg-gradient-to-b from-card/30 to-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

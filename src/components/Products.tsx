@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { toast } from "sonner";
 
 interface Product {
@@ -19,6 +20,7 @@ interface Product {
 }
 
 const Products = () => {
+  const { ref, isVisible } = useScrollReveal();
   const [activeFilter, setActiveFilter] = useState("all");
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -73,7 +75,7 @@ const Products = () => {
   }
 
   return (
-    <section id="shop" className="py-16 bg-background">
+    <section ref={ref} id="shop" className={`py-16 bg-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">

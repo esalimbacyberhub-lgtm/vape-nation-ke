@@ -6,8 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { AlertDialog, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
 import { MapPin, Phone, Mail, Clock, Car, Bus, Store, Navigation } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const Contact = () => {
+  const { ref, isVisible } = useScrollReveal();
   const [showThankYou, setShowThankYou] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -16,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-background">
+    <section ref={ref} id="contact" className={`py-16 bg-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         {/* Store Location Section */}
         <div className="mb-16">
