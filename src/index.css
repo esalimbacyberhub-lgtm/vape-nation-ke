@@ -174,10 +174,36 @@
 
   .animate-fade-in {
     animation: fadeInSmooth 1.2s ease forwards;
+    will-change: opacity, transform;
   }
 
   /* WhatsApp button hover glow */
   .whatsapp-btn:hover {
-    box-shadow: 0 0 25px rgba(37, 211, 102, 0.9) !important;
+    filter: drop-shadow(0 0 25px rgba(37, 211, 102, 0.9)) !important;
   }
+
+  /* Performance: Disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    .animate-pulse-glow,
+    .whatsapp-btn {
+      animation: none !important;
+    }
+  }
+
+  /* GPU acceleration hints for animated elements */
+  .group:hover .transform-gpu,
+  [class*="hover:scale"] {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+}
 }
