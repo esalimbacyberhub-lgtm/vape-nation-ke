@@ -67,7 +67,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section ref={ref} className={`py-16 bg-muted/20 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <section ref={ref} id="gallery" className={`py-16 bg-muted/20 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
