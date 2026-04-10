@@ -1,12 +1,26 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 
-export function useScrollReveal(threshold = 0.15) {
+export function useScrollReveal(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const observerOptions = useMemo(() => ({ 
+    threshold,
+    rootMargin: "50px 0px 0px 0px"
+  }), [threshold]);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    
+    // Check if already visible to avoid unnecessary observer setup
+    const rect = el.getBoundingClientRect();
+    const isAlreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    
+    if (isAlreadyVisible) {
+      setIsVisible(true);
+      return;
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -15,12 +29,12 @@ export function useScrollReveal(threshold = 0.15) {
           observer.unobserve(el);
         }
       },
-      { threshold }
+      observerOptions
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [threshold]);
+  }, [observerOptions]);
 
   return { ref, isVisible };
 }
