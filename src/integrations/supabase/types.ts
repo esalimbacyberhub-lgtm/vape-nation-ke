@@ -65,7 +65,8 @@ export type Database = {
           category: string
           created_at: string | null
           display_order: number
-          flavor: string
+          flavor: string | null
+          flavors: string[] | null
           id: string
           image: string
           name: string
@@ -79,13 +80,14 @@ export type Database = {
           category: string
           created_at?: string | null
           display_order: number
-          flavor: string
+          flavor?: string | null
+          flavors?: string[] | null
           id?: string
           image: string
           name: string
           popular?: boolean | null
           price: number
-          puffs: string
+          puffs?: string
           updated_at?: string | null
         }
         Update: {
@@ -93,7 +95,8 @@ export type Database = {
           category?: string
           created_at?: string | null
           display_order?: number
-          flavor?: string
+          flavor?: string | null
+          flavors?: string[] | null
           id?: string
           image?: string
           name?: string
