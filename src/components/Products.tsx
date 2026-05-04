@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { toast } from "sonner";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface Product {
   id: string;
@@ -17,21 +18,15 @@ interface Product {
   badge: string;
   category: string;
   display_order: number;
+  flavors: string[];
 }
 
 const Products = () => {
   const { ref, isVisible } = useScrollReveal();
-  const [activeFilter, setActiveFilter] = useState("all");
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-
-  const categoryFilters = [
-    { id: "all", label: "All", icon: "🛍️" },
-    { id: "disposable", label: "Disposable Vapes", icon: "💨" },
-    { id: "juice", label: "Vape Juice", icon: "💧" },
-    { id: "pods", label: "Pod Kits", icon: "🔋" },
-    { id: "accessories", label: "Accessories", icon: "🔌" },
-  ];
+  const [expandedFlavors, setExpandedFlavors] = useState<Record<string, boolean>>({});
+  const [selectedFlavors, setSelectedFlavors] = useState<Record<string, string>>({});
 
   useEffect(() => {
     loadProducts();
@@ -50,18 +45,28 @@ const Products = () => {
       return;
     }
 
-    setProducts(data || []);
+    const mapped = (data || []).map((p: any) => ({
+      ...p,
+      flavors: p.flavors || [],
+    }));
+    setProducts(mapped);
     setLoading(false);
   };
 
-  const filteredProducts = products.filter(product => 
-    activeFilter === "all" || product.category === activeFilter
-  );
+  const toggleFlavors = (productId: string) => {
+    setExpandedFlavors((prev) => ({ ...prev, [productId]: !prev[productId] }));
+  };
 
-  const handleWhatsAppOrder = (productName: string, price: number) => {
-    const message = `Hi! I'm interested in ordering ${productName} (KSH ${price.toLocaleString()})`;
+  const selectFlavor = (productId: string, flavor: string) => {
+    setSelectedFlavors((prev) => ({ ...prev, [productId]: flavor }));
+  };
+
+  const handleWhatsAppOrder = (product: Product) => {
+    const flavor = selectedFlavors[product.id];
+    const flavorText = flavor ? ` – Flavour: ${flavor}` : "";
+    const message = `Hi! I'd like to order *${product.name}*${flavorText} (KSH ${product.price.toLocaleString()})`;
     const whatsappUrl = `https://wa.me/254742405841?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
   };
 
   if (loading) {
@@ -75,7 +80,13 @@ const Products = () => {
   }
 
   return (
-    <section ref={ref} id="shop" className={`py-16 bg-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <section
+      ref={ref}
+      id="shop"
+      className={`py-16 bg-background transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -87,94 +98,115 @@ const Products = () => {
           </p>
           <div className="mt-4 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-lg p-4 max-w-2xl mx-auto">
             <p className="text-sm text-amber-900 dark:text-amber-200">
-              📦 <strong>Note:</strong> Delivery charges are not included in product prices. Delivery fees may vary depending on your location.
+              📦 <strong>Note:</strong> Delivery charges are not included in
+              product prices. Delivery fees may vary depending on your location.
             </p>
-          </div>
-        </div>
-
-        {/* Category Filters */}
-        <div className="mb-12">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {categoryFilters.map((category) => (
-              <Button
-                key={category.id}
-                variant={activeFilter === category.id ? "default" : "outline"}
-                onClick={() => setActiveFilter(category.id)}
-                className="font-semibold rounded-full px-6 transition-all duration-300"
-              >
-                <span className="mr-2">{category.icon}</span>
-                {category.label}
-              </Button>
-            ))}
           </div>
         </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredProducts.map((product) => (
-            <Card 
-              key={product.id} 
-              className="group hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] transition-all duration-300 overflow-hidden border-2 hover:border-primary"
-            >
-              <CardContent className="p-0">
-                {/* Image Container */}
-                <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-contain transform group-hover:scale-110 transition-transform duration-500 p-4"
-                  />
-                  {product.popular && (
-                    <Badge className="absolute top-4 right-4 bg-red-500 text-white font-bold animate-pulse">
-                      🔥 POPULAR
-                    </Badge>
-                  )}
-                  <Badge 
-                    variant="secondary" 
-                    className="absolute top-4 left-4 font-bold backdrop-blur-sm bg-background/80"
-                  >
-                    {product.badge}
-                  </Badge>
-                </div>
+          {products.map((product) => {
+            const isExpanded = expandedFlavors[product.id];
+            const selected = selectedFlavors[product.id];
 
-                {/* Product Info */}
-                <div className="p-6 space-y-3">
-                  <h3 className="font-bold text-lg line-clamp-2 min-h-[3.5rem]">
-                    {product.name}
-                  </h3>
-                  
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">
-                      {product.puffs}
-                    </span>
-                    <Badge variant="outline" className="text-xs">
-                      {product.flavor}
+            return (
+              <Card
+                key={product.id}
+                className="group hover:shadow-2xl hover:shadow-primary/20 hover:scale-[1.03] transition-all duration-300 overflow-hidden border-2 hover:border-primary"
+              >
+                <CardContent className="p-0">
+                  {/* Image Container */}
+                  <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-48 object-contain transform group-hover:scale-110 transition-transform duration-500 p-4"
+                    />
+                    {product.popular && (
+                      <Badge className="absolute top-3 right-3 bg-red-500 text-white font-bold animate-pulse">
+                        🔥 POPULAR
+                      </Badge>
+                    )}
+                    <Badge
+                      variant="secondary"
+                      className="absolute top-3 left-3 font-bold backdrop-blur-sm bg-background/80"
+                    >
+                      {product.badge}
                     </Badge>
                   </div>
 
-                  <div className="flex items-center justify-between pt-2 border-t">
-                    <span className="text-2xl font-bold text-primary">
-                      KSH {product.price.toLocaleString()}
-                    </span>
-                  </div>
+                  {/* Product Info */}
+                  <div className="p-5 space-y-3">
+                    <h3 className="font-bold text-lg line-clamp-2 min-h-[3rem]">
+                      {product.name}
+                    </h3>
 
-                  <Button 
-                    className="w-full font-semibold group-hover:bg-primary group-hover:text-primary-foreground transition-all relative z-10"
-                    onClick={() => handleWhatsAppOrder(product.name, product.price)}
-                  >
-                    Order on WhatsApp 💬
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">
+                        {product.puffs}
+                      </span>
+                      <span className="text-2xl font-bold text-primary">
+                        KSH {product.price.toLocaleString()}
+                      </span>
+                    </div>
+
+                    {/* Flavors Section */}
+                    {product.flavors.length > 0 && (
+                      <div className="space-y-2">
+                        <button
+                          onClick={() => toggleFlavors(product.id)}
+                          className="flex items-center justify-between w-full text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1"
+                        >
+                          <span>
+                            {selected
+                              ? `Selected: ${selected}`
+                              : `${product.flavors.length} flavours available`}
+                          </span>
+                          {isExpanded ? (
+                            <ChevronUp className="h-4 w-4" />
+                          ) : (
+                            <ChevronDown className="h-4 w-4" />
+                          )}
+                        </button>
+
+                        {isExpanded && (
+                          <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pr-1">
+                            {product.flavors.map((fl) => (
+                              <button
+                                key={fl}
+                                onClick={() => selectFlavor(product.id, fl)}
+                                className={`text-xs px-2 py-1 rounded-full border transition-all ${
+                                  selected === fl
+                                    ? "bg-primary text-primary-foreground border-primary"
+                                    : "bg-muted/50 border-border hover:border-primary hover:text-primary"
+                                }`}
+                              >
+                                {fl}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    <Button
+                      className="w-full font-semibold transition-all relative z-10"
+                      onClick={() => handleWhatsAppOrder(product)}
+                    >
+                      Order via WhatsApp 💬
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
-        {/* No Results */}
-        {filteredProducts.length === 0 && (
+        {products.length === 0 && (
           <div className="text-center py-12">
             <p className="text-xl text-muted-foreground">
-              No products found in this category.
+              No products found.
             </p>
           </div>
         )}
