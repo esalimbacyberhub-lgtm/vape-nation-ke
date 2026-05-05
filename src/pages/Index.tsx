@@ -14,12 +14,22 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Buy Vapes Nairobi | Disposable Vapes Kenya | Vape Nation KE</title>
+        <title>Vape Nation KE | Premium Vape Delivery Nairobi - Same Day</title>
         <meta 
           name="description" 
-          content="Buy vapes Nairobi – Lost Mary, Elfbar & top disposable vapes Kenya. Fast vape delivery Nairobi, Kilimani, Westlands. Kenya's #1 vape shop. Order now!" 
+          content="Buy premium disposable vapes in Nairobi with same-day delivery. Kilimani HQ. Elfbar, Lost Mary, Solo Bar, Vapengin & more. Call/WhatsApp 0742405841" 
         />
-        <meta name="keywords" content="buy vapes Nairobi, disposable vapes Kenya, fast vape delivery Nairobi, best vapes Kilimani, vape shop Westlands, Lost Mary Kenya, Elfbar Nairobi, vape pods Kenya, e-liquids Kenya" />
+        <meta name="keywords" content="vape delivery Nairobi, disposable vapes Kenya, Elfbar Nairobi, Lost Mary Kenya, vape shop Kilimani, same day vape delivery, buy vapes Nairobi, Solo Bar Kenya, Vapengin Kenya" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Vape Nation KE | Premium Vape Delivery Nairobi - Same Day" />
+        <meta property="og:description" content="Buy premium disposable vapes in Nairobi with same-day delivery. Kilimani HQ. Elfbar, Lost Mary, Solo Bar, Vapengin & more. Call/WhatsApp 0742405841" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/ryUYGwBdTkeadTwOEtUxIh4AySA2/social-images/social-1761798134397-Vape Nation Neon Skull Design.png" />
+        <meta property="og:url" content="https://vape-nation-ke.lovable.app" />
+        <meta property="og:site_name" content="Vape Nation KE" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vape Nation KE | Premium Vape Delivery Nairobi - Same Day" />
+        <meta name="twitter:description" content="Buy premium disposable vapes in Nairobi with same-day delivery. Kilimani HQ. Elfbar, Lost Mary, Solo Bar, Vapengin & more. Call/WhatsApp 0742405841" />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/ryUYGwBdTkeadTwOEtUxIh4AySA2/social-images/social-1761798134397-Vape Nation Neon Skull Design.png" />
       </Helmet>
       <Header />
       <Hero />
