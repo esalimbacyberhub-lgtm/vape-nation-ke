@@ -2,108 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
 @layer base {
   :root {
-    --background: 216 22% 5%;
+    --background: 220 30% 4%;
     --foreground: 0 0% 100%;
 
-    --card: 228 15% 13%;
+    --card: 220 25% 8%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 228 15% 13%;
+    --popover: 220 25% 8%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 330 100% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 220 30% 4%;
 
-    --secondary: 228 15% 20%;
+    --secondary: 220 25% 12%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 228 15% 13%;
+    --muted: 220 25% 8%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 275 100% 50%;
+    --accent: 280 100% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 228 15% 22%;
-    --input: 228 15% 18%;
-    --ring: 330 100% 50%;
+    --border: 187 50% 15%;
+    --input: 220 25% 10%;
+    --ring: 187 100% 50%;
 
     --radius: 0.875rem;
-    
-    /* Modern premium vape store colors */
-    --vape-magenta: 330 100% 50%;
-    --vape-magenta-light: 330 100% 75%;
-    --vape-purple: 275 100% 50%;
-    --vape-purple-dark: 275 70% 35%;
-    --vape-dark: 216 22% 5%;
-    --vape-card: 228 15% 13%;
+
+    --vape-cyan: 187 100% 50%;
+    --vape-cyan-light: 187 100% 75%;
+    --vape-purple: 280 100% 60%;
+    --vape-purple-dark: 280 70% 35%;
+    --vape-dark: 220 30% 4%;
+    --vape-card: 220 25% 8%;
     --vape-text: 0 0% 100%;
-    --vape-glow: 163 100% 50%;
-    
-    /* Premium gradients */
-    --gradient-primary: linear-gradient(90deg, hsl(330 100% 50%) 0%, hsl(275 100% 50%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(228 15% 13%) 0%, hsl(228 15% 10%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(216 22% 5%) 0%, hsl(228 15% 12%) 50%, hsl(216 22% 5%) 100%);
+    --vape-glow: 187 100% 50%;
 
-    --sidebar-background: 0 0% 98%;
+    --gradient-primary: linear-gradient(90deg, hsl(187 100% 50%) 0%, hsl(280 100% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 8%) 0%, hsl(220 25% 6%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(220 30% 4%) 0%, hsl(220 25% 8%) 50%, hsl(220 30% 4%) 100%);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 30% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 220 30% 4%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 187 50% 15%;
+    --sidebar-ring: 187 100% 50%;
   }
 
   .dark {
-    --background: 216 22% 5%;
+    --background: 220 30% 4%;
     --foreground: 0 0% 100%;
-
-    --card: 228 15% 13%;
+    --card: 220 25% 8%;
     --card-foreground: 0 0% 100%;
-
-    --popover: 228 15% 13%;
+    --popover: 220 25% 8%;
     --popover-foreground: 0 0% 100%;
-
-    --primary: 330 100% 50%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 228 15% 20%;
+    --primary: 187 100% 50%;
+    --primary-foreground: 220 30% 4%;
+    --secondary: 220 25% 12%;
     --secondary-foreground: 0 0% 100%;
-
-    --muted: 228 15% 13%;
+    --muted: 220 25% 8%;
     --muted-foreground: 0 0% 70%;
-
-    --accent: 275 100% 50%;
+    --accent: 280 100% 60%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-
-    --border: 228 15% 22%;
-    --input: 228 15% 18%;
-    --ring: 330 100% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 187 50% 15%;
+    --input: 220 25% 10%;
+    --ring: 187 100% 50%;
+    --sidebar-background: 220 30% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 187 100% 50%;
+    --sidebar-primary-foreground: 220 30% 4%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 187 50% 15%;
+    --sidebar-ring: 187 100% 50%;
   }
 }
 
@@ -121,44 +102,42 @@
   }
 
   @keyframes pulse-glow {
-    0% { 
-      box-shadow: 0 0 18px rgba(181, 23, 158, 0.6); 
+    0% {
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.6);
       transform: translateZ(0);
     }
-    50% { 
-      box-shadow: 0 0 30px rgba(255, 0, 255, 0.8); 
+    50% {
+      box-shadow: 0 0 35px rgba(0, 229, 255, 0.9), 0 0 60px rgba(149, 0, 255, 0.4);
       transform: translateZ(0);
     }
-    100% { 
-      box-shadow: 0 0 18px rgba(181, 23, 158, 0.6); 
+    100% {
+      box-shadow: 0 0 18px rgba(0, 229, 255, 0.6);
       transform: translateZ(0);
     }
   }
 
   @keyframes pulse-glow-green {
-    0% { 
+    0% {
       filter: drop-shadow(0 0 12px rgba(37, 211, 102, 0.5));
       transform: scale(1) translateZ(0);
     }
-    50% { 
+    50% {
       filter: drop-shadow(0 0 25px rgba(37, 211, 102, 0.8));
       transform: scale(1.05) translateZ(0);
     }
-    100% { 
+    100% {
       filter: drop-shadow(0 0 12px rgba(37, 211, 102, 0.5));
       transform: scale(1) translateZ(0);
     }
   }
 
-  .animate-pulse-glow {
-    animation: pulse-glow 2s infinite;
-    will-change: box-shadow;
-  }
-
-  .whatsapp-btn {
-    animation: pulse-glow-green 2s infinite !important;
-    will-change: filter, transform;
-    backface-visibility: hidden;
+  @keyframes neon-flicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.8; }
+    94% { opacity: 1; }
+    96% { opacity: 0.9; }
+    97% { opacity: 1; }
   }
 
   @keyframes fadeInSmooth {
@@ -172,17 +151,56 @@
     }
   }
 
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+    will-change: box-shadow;
+  }
+
+  .whatsapp-btn {
+    animation: pulse-glow-green 2s infinite !important;
+    will-change: filter, transform;
+    backface-visibility: hidden;
+  }
+
   .animate-fade-in {
     animation: fadeInSmooth 1.2s ease forwards;
     will-change: opacity, transform;
   }
 
-  /* WhatsApp button hover glow */
+  .neon-text {
+    color: hsl(187 100% 50%);
+    text-shadow: 0 0 10px hsl(187 100% 50%), 0 0 20px hsl(187 100% 50%), 0 0 40px hsl(187 100% 50%);
+    animation: neon-flicker 8s infinite;
+  }
+
+  .neon-border {
+    border: 1px solid hsl(187 100% 50%);
+    box-shadow: 0 0 10px hsl(187 100% 50% / 0.3), inset 0 0 10px hsl(187 100% 50% / 0.05);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 229, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(0, 229, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 229, 255, 0.15);
+    transform: translateY(-2px);
+  }
+
   .whatsapp-btn:hover {
     filter: drop-shadow(0 0 25px rgba(37, 211, 102, 0.9)) !important;
   }
 
-  /* Performance: Disable animations for users who prefer reduced motion */
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -192,14 +210,13 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
-    
+
     .animate-pulse-glow,
     .whatsapp-btn {
       animation: none !important;
     }
   }
 
-  /* GPU acceleration hints for animated elements */
   .group:hover .transform-gpu,
   [class*="hover:scale"] {
     will-change: transform;
