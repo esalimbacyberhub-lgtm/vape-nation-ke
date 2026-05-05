@@ -189,7 +189,7 @@ const Products = () => {
 
                     <Button
                       className="w-full font-semibold transition-all relative z-10"
-                      onClick={() => handleWhatsAppOrder(product)}
+                      onClick={() => handleWhatsAppOrder()}
                     >
                       Order via WhatsApp 💬
                     </Button>
