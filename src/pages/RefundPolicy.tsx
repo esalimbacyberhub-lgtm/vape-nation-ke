@@ -1,3 +1,4 @@
+import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -60,7 +61,7 @@ const RefundPolicy = () => {
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">To request a replacement</h2>
             <p className="text-foreground leading-relaxed">
-              WhatsApp: <a href="https://wa.me/254742405841" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">0742405841</a>
+              WhatsApp: <a href={getWhatsAppCatalogUrl()} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">0742405841</a>
             </p>
           </section>
         </div>

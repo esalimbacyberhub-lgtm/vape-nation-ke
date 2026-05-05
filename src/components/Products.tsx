@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { toast } from "sonner";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -61,12 +62,8 @@ const Products = () => {
     setSelectedFlavors((prev) => ({ ...prev, [productId]: flavor }));
   };
 
-  const handleWhatsAppOrder = (product: Product) => {
-    const flavor = selectedFlavors[product.id];
-    const flavorText = flavor ? ` – Flavour: ${flavor}` : "";
-    const message = `Hi! I'd like to order *${product.name}*${flavorText} (KSH ${product.price.toLocaleString()})`;
-    const whatsappUrl = `https://wa.me/254742405841?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
+  const handleWhatsAppOrder = () => {
+    window.open(getWhatsAppCatalogUrl(), "_blank");
   };
 
   if (loading) {
@@ -192,7 +189,7 @@ const Products = () => {
 
                     <Button
                       className="w-full font-semibold transition-all relative z-10"
-                      onClick={() => handleWhatsAppOrder(product)}
+                      onClick={() => handleWhatsAppOrder()}
                     >
                       Order via WhatsApp 💬
                     </Button>
