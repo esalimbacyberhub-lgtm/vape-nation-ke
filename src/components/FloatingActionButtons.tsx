@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 
 const FloatingActionButtons = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -77,7 +78,7 @@ const FloatingActionButtons = () => {
 
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/254742405841" 
+        href={getWhatsAppCatalogUrl()} 
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:scale-110 animate-fade-in animate-pulse-glow text-white"
