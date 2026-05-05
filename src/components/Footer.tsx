@@ -1,4 +1,5 @@
 import { Phone, Mail } from "lucide-react";
+import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
             </a>
             <span className="hidden sm:inline">|</span>
             <a 
-              href="https://wa.me/254742405841" 
+              href={getWhatsAppCatalogUrl()} 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
