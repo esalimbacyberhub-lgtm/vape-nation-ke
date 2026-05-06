@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
@@ -13,38 +12,31 @@ const About = () => {
   ];
 
   return (
-    <section ref={ref} id="about" className={`py-16 bg-gradient-to-b from-background to-card/30 transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <section ref={ref} id="about" className={`py-20 relative transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Why Nairobi Vibes With Us
-              </span>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 neon-text neon-glow-heading tracking-wider">
+              WHY NAIROBI VIBES WITH US
             </h2>
           </div>
 
-          {/* Main Content Card */}
-          <Card className="border-primary/20 shadow-lg shadow-primary/10">
-            <CardContent className="p-8 md:p-12">
-              <div className="space-y-6">
-                {/* Features List */}
-                <div className="space-y-4">
-                  {features.map((feature, index) => (
-                    <div key={index} className="flex items-start space-x-3 group">
-                      <div className="mt-1 flex-shrink-0">
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform">
-                          <Check className="h-4 w-4 text-background" />
-                        </div>
-                      </div>
-                      <p className="text-foreground text-lg">{feature}</p>
+          <div className="glass-card rounded-2xl p-8 md:p-12">
+            <div className="space-y-5">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start space-x-4 group">
+                  <div className="mt-1 flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full flex items-center justify-center group-hover:scale-110 transition-all group-hover:shadow-[0_0_15px_rgba(0,245,255,0.4)]"
+                      style={{ background: 'linear-gradient(135deg, #00F5FF, #BF00FF)' }}
+                    >
+                      <Check className="h-4 w-4 text-background" />
                     </div>
-                  ))}
+                  </div>
+                  <p className="text-foreground text-lg group-hover:text-primary transition-colors">{feature}</p>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

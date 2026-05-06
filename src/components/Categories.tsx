@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import lostMaryMT15000 from "@/assets/lost-mary-mt15000.png";
@@ -15,41 +14,14 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 const Categories = () => {
   const { ref, isVisible } = useScrollReveal();
   const productTypes = [
-    {
-      name: "Disposables",
-      description: "Ready-to-use vapes with no maintenance required",
-      products: "60+ Products",
-      image: lostMaryMT15000,
-      popular: true,
-    },
-    {
-      name: "Pod Systems",
-      description: "Refillable pods for a customizable experience",
-      products: "23+ Products",
-      image: vapenginJupiter,
-      popular: false,
-    },
+    { name: "Disposables", description: "Ready-to-use vapes with no maintenance required", products: "60+ Products", image: lostMaryMT15000, popular: true },
+    { name: "Pod Systems", description: "Refillable pods for a customizable experience", products: "23+ Products", image: vapenginJupiter, popular: false },
   ];
 
   const flavors = [
-    {
-      name: "Ice & Mint",
-      description: "Cool and refreshing flavors",
-      count: "25+ Flavors",
-      image: iceMintFlavor,
-    },
-    {
-      name: "Fruit Fusion",
-      description: "Sweet and tropical fruit blends",
-      count: "30+ Flavors",
-      image: fruitFusionFlavor,
-    },
-    {
-      name: "Berry Blends",
-      description: "Rich berry combinations",
-      count: "18+ Flavors",
-      image: berryBlendsFlavor,
-    },
+    { name: "Ice & Mint", description: "Cool and refreshing flavors", count: "25+ Flavors", image: iceMintFlavor },
+    { name: "Fruit Fusion", description: "Sweet and tropical fruit blends", count: "30+ Flavors", image: fruitFusionFlavor },
+    { name: "Berry Blends", description: "Rich berry combinations", count: "18+ Flavors", image: berryBlendsFlavor },
   ];
 
   const brands = [
@@ -60,12 +32,13 @@ const Categories = () => {
   ];
 
   return (
-    <section ref={ref} id="categories" className={`py-16 bg-background transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <section ref={ref} id="categories" className={`py-20 relative transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[300px] rounded-full opacity-5 blur-[120px]" style={{ background: '#BF00FF' }} />
+
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            🗂️ SHOP BY CATEGORY
+        <div className="text-center mb-14">
+          <h2 className="text-4xl font-black mb-4 neon-text neon-glow-heading tracking-wider">
+            SHOP BY CATEGORY
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover your perfect vape by product type, flavor, or brand
@@ -74,76 +47,59 @@ const Categories = () => {
 
         {/* Product Types */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8">Product Types</h3>
+          <h3 className="text-2xl font-bold mb-8 text-foreground tracking-wider">Product Types</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {productTypes.map((type, index) => (
-              <Card key={index} className="relative overflow-hidden hover:scale-105 transition-all border-primary/20 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/20">
+              <div key={index} className="glass-card rounded-xl overflow-hidden relative group">
                 {type.popular && (
-                  <Badge className="absolute top-4 left-4 z-10 bg-gradient-to-r from-destructive to-accent text-white shadow-lg">
+                  <Badge className="absolute top-4 left-4 z-10 bg-gradient-to-r from-red-500 to-accent text-foreground shadow-lg border-none">
                     🔥 POPULAR
                   </Badge>
                 )}
-                <CardContent className="p-8 text-center">
-                  <img 
-                    src={type.image} 
-                    alt={type.name}
-                    className="w-24 h-24 mx-auto mb-6 object-contain"
-                  />
-                  <CardTitle className="text-xl mb-3">{type.name}</CardTitle>
+                <div className="p-8 text-center">
+                  <img src={type.image} alt={type.name} className="w-24 h-24 mx-auto mb-6 object-contain group-hover:scale-110 transition-transform duration-500" />
+                  <h4 className="text-xl font-bold mb-3 tracking-wider">{type.name}</h4>
                   <p className="text-muted-foreground mb-4">{type.description}</p>
-                  <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-semibold mb-4">{type.products}</p>
-                  <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">Shop Now</Button>
-                </CardContent>
-              </Card>
+                  <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold mb-4">{type.products}</p>
+                  <Button className="neon-button rounded-lg">Shop Now</Button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Shop by Flavor */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8">Shop by Flavor</h3>
+          <h3 className="text-2xl font-bold mb-8 text-foreground tracking-wider">Shop by Flavor</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {flavors.map((flavor, index) => (
-              <Card key={index} className="hover:scale-105 transition-transform">
-                <CardContent className="p-6 text-center">
-                  <img 
-                    src={flavor.image} 
-                    alt={flavor.name}
-                    className="w-16 h-16 mx-auto mb-4 object-contain"
-                  />
-                  <CardTitle className="text-lg mb-2">{flavor.name}</CardTitle>
-                  <p className="text-sm text-muted-foreground mb-3">{flavor.description}</p>
-                  <p className="text-primary font-semibold mb-3">{flavor.count}</p>
-                  <Button variant="outline" size="sm">Explore</Button>
-                </CardContent>
-              </Card>
+              <div key={index} className="glass-card rounded-xl p-6 text-center group">
+                <img src={flavor.image} alt={flavor.name} className="w-16 h-16 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform duration-300" />
+                <h4 className="text-lg font-bold mb-2 tracking-wider">{flavor.name}</h4>
+                <p className="text-sm text-muted-foreground mb-3">{flavor.description}</p>
+                <p className="text-primary font-bold mb-3">{flavor.count}</p>
+                <Button variant="outline" size="sm" className="border-primary/30 hover:border-primary/60">Explore</Button>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Shop by Brand */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-8">Shop by Brand</h3>
+          <h3 className="text-2xl font-bold mb-8 text-foreground tracking-wider">Shop by Brand</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {brands.map((brand, index) => (
-              <Card key={index} className="hover:scale-105 transition-transform">
-                <CardContent className="p-6 text-center">
-                  <img 
-                    src={brand.image} 
-                    alt={brand.name}
-                    className="w-16 h-16 mx-auto mb-4 object-contain"
-                  />
-                  <CardTitle className="text-base mb-2">{brand.name}</CardTitle>
-                  <p className="text-sm text-primary font-semibold">{brand.products}</p>
-                </CardContent>
-              </Card>
+              <div key={index} className="glass-card rounded-xl p-6 text-center group">
+                <img src={brand.image} alt={brand.name} className="w-16 h-16 mx-auto mb-4 object-contain group-hover:scale-110 transition-transform duration-300" />
+                <h4 className="text-base font-bold mb-2 tracking-wider">{brand.name}</h4>
+                <p className="text-sm text-primary font-semibold">{brand.products}</p>
+              </div>
             ))}
           </div>
         </div>
 
-        {/* CTA */}
         <div className="text-center">
-          <Button size="lg" className="px-8 py-4">
+          <Button size="lg" className="px-8 py-4 neon-button rounded-xl tracking-widest">
             VIEW ALL PRODUCTS
           </Button>
         </div>
