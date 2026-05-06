@@ -3,34 +3,32 @@ import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-card to-card/50 border-t border-primary/20 py-12">
+    <footer className="relative border-t border-primary/10 py-12" style={{ background: 'rgba(10, 10, 10, 0.9)' }}>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Brand */}
-          <h3 className="text-3xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Vape Nation KE – The City's Vape Plug
-            </span>
+          <h3 className="text-3xl font-black mb-4 tracking-wider">
+            <span className="neon-text neon-glow-heading">Vape Nation KE</span>
+            <span className="text-muted-foreground text-lg block mt-1 font-normal tracking-normal" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>The City's Vape Plug</span>
           </h3>
-          
-          {/* Description */}
-          <p className="text-lg text-foreground mb-4 font-semibold leading-relaxed">
+
+          <p className="text-lg text-foreground mb-4 font-semibold leading-relaxed" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             We deliver authentic vapes & flavors straight to your spot — fast.
           </p>
-          <p className="text-base text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             No fakes. No low-quality clones. Only top-tier brands and fire flavors.
           </p>
-          
-          {/* Contact Info */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 text-muted-foreground">
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 text-muted-foreground" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             <a href="tel:0742405841" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
               <span>0742405841</span>
             </a>
-            <span className="hidden sm:inline">|</span>
-            <a 
-              href={getWhatsAppCatalogUrl()} 
-              target="_blank" 
+            <span className="hidden sm:inline text-primary/30">|</span>
+            <a
+              href={getWhatsAppCatalogUrl()}
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
@@ -39,15 +37,14 @@ const Footer = () => {
               </svg>
               <span>WhatsApp Available</span>
             </a>
-            <span className="hidden sm:inline">|</span>
+            <span className="hidden sm:inline text-primary/30">|</span>
             <a href="mailto:info@vapenationke.co.ke" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="h-4 w-4" />
               <span>info@vapenationke.co.ke</span>
             </a>
           </div>
 
-          {/* Delivery Info */}
-          <div className="space-y-2 text-sm text-muted-foreground">
+          <div className="space-y-2 text-sm text-muted-foreground" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             <p className="flex items-center justify-center gap-2">
               <span className="text-primary">🚚</span>
               <span>Same-day delivery: Kilimani, Lavington, Kileleshwa, Westlands, Parklands, CBD & more</span>
@@ -62,32 +59,30 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Local SEO Section */}
           <div className="mt-8 pt-8 border-t border-primary/10">
-            <h4 className="text-xl font-bold mb-4 text-foreground">
+            <h4 className="text-xl font-bold mb-4 text-foreground tracking-wider">
               Serving All Major Areas in Kenya
             </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Vape Nation KE proudly delivers authentic vapes, pods, and e-liquids across Kenya. 
-              Whether you're in <strong>Nairobi, Kilimani, Lavington, Kileleshwa, Westlands, Parklands, Ngong, Karen, or Thika</strong>, 
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Vape Nation KE proudly delivers authentic vapes, pods, and e-liquids across Kenya.
+              Whether you're in <strong className="text-foreground">Nairobi, Kilimani, Lavington, Kileleshwa, Westlands, Parklands, Ngong, Karen, or Thika</strong>,
               we've got you covered with fast same-day delivery.
             </p>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto mt-3">
-              We also serve <strong>Mombasa, Kisumu, Nakuru, Eldoret</strong>, and other major towns nationwide — 
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl mx-auto mt-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              We also serve <strong className="text-foreground">Mombasa, Kisumu, Nakuru, Eldoret</strong>, and other major towns nationwide —
               bringing you trusted vape products wherever you are.
             </p>
-            <p className="text-sm font-semibold text-foreground mt-4">
+            <p className="text-sm font-semibold text-primary mt-4">
               💨 Order online today and enjoy Kenya's #1 vape delivery service with Vape Nation KE.
             </p>
           </div>
 
-          {/* Copyright */}
-          <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground space-y-3">
+          <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground space-y-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
-              <span>•</span>
+              <span className="text-primary/30">•</span>
               <a href="/delivery-policy" className="hover:text-primary transition-colors">Delivery & Shipping</a>
-              <span>•</span>
+              <span className="text-primary/30">•</span>
               <a href="/refund-policy" className="hover:text-primary transition-colors">Refund & Replacement</a>
             </div>
             <p>&copy; {new Date().getFullYear()} Vape Nation KE. All rights reserved.</p>
