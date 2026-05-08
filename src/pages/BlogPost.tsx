@@ -53,6 +53,20 @@ const BlogPost = () => {
         <title>{post.meta_title || post.title} | Vape Nation KE Blog</title>
         <meta name="description" content={post.meta_description || post.excerpt} />
         <link rel="canonical" href={`https://vapenationke.co.ke/blog/${post.slug}`} />
+        {/* Open Graph */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.meta_title || post.title} />
+        <meta property="og:description" content={post.meta_description || post.excerpt} />
+        <meta property="og:url" content={`https://vapenationke.co.ke/blog/${post.slug}`} />
+        <meta property="og:site_name" content="Vape Nation KE" />
+        {post.image_url && <meta property="og:image" content={post.image_url} />}
+        <meta property="article:author" content={post.author} />
+        <meta property="article:published_time" content={post.created_at} />
+        {/* Twitter */}
+        <meta name="twitter:card" content={post.image_url ? "summary_large_image" : "summary"} />
+        <meta name="twitter:title" content={post.meta_title || post.title} />
+        <meta name="twitter:description" content={post.meta_description || post.excerpt} />
+        {post.image_url && <meta name="twitter:image" content={post.image_url} />}
       </Helmet>
       <Header />
 
