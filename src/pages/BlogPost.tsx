@@ -47,6 +47,10 @@ const BlogPost = () => {
     );
   }
 
+  const ogImage =
+    post.image_url ||
+    `https://vapenationke.co.ke/og/${post.slug}.jpg`;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
@@ -59,16 +63,16 @@ const BlogPost = () => {
         <meta property="og:description" content={post.meta_description || post.excerpt} />
         <meta property="og:url" content={`https://vapenationke.co.ke/blog/${post.slug}`} />
         <meta property="og:site_name" content="Vape Nation KE" />
-        <meta property="og:image" content={post.image_url || "https://vapenationke.co.ke/og-image.jpg"} />
-        <meta property="og:image:width" content="1216" />
-        <meta property="og:image:height" content="640" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:author" content={post.author} />
         <meta property="article:published_time" content={post.created_at} />
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.meta_title || post.title} />
         <meta name="twitter:description" content={post.meta_description || post.excerpt} />
-        <meta name="twitter:image" content={post.image_url || "https://vapenationke.co.ke/og-image.jpg"} />
+        <meta name="twitter:image" content={ogImage} />
       </Helmet>
       <Header />
 
