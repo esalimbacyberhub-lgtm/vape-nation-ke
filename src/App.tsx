@@ -18,6 +18,8 @@ import RefundPolicy from "./pages/RefundPolicy";
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import ProductDetail from "./pages/ProductDetail";
+import ScrollToHash from "./components/ScrollToHash";
 
 const queryClient = new QueryClient();
 
