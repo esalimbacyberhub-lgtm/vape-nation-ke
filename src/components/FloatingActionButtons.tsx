@@ -18,7 +18,7 @@ const FloatingActionButtons = () => {
     <>
       {/* Shop Now Button - Left Side */}
       <a
-        href="#shop"
+        href="/#shop"
         className="fixed bottom-[100px] left-5 z-50 flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-sm tracking-widest uppercase transition-all duration-300 ease-in-out hover:scale-105 animate-pulse-glow pointer-events-auto"
         style={{
           background: 'linear-gradient(135deg, #00F5FF, #BF00FF)',

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
@@ -116,11 +117,13 @@ const Products = () => {
               >
                 {/* Image Container */}
                 <div className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-48 object-contain transform group-hover:scale-110 transition-transform duration-500 p-4"
-                  />
+                  <Link to={`/product/${product.id}`} aria-label={`View ${product.name}`}>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-48 object-contain transform group-hover:scale-110 transition-transform duration-500 p-4 cursor-pointer"
+                    />
+                  </Link>
                   {product.popular && (
                     <Badge className="absolute top-3 right-3 bg-gradient-to-r from-red-500 to-accent text-foreground font-bold animate-pulse border-none">
                       🔥 POPULAR
@@ -136,9 +139,11 @@ const Products = () => {
 
                 {/* Product Info */}
                 <div className="p-5 space-y-3">
-                  <h3 className="font-bold text-lg line-clamp-2 min-h-[3rem] tracking-wide">
-                    {product.name}
-                  </h3>
+                  <Link to={`/product/${product.id}`}>
+                    <h3 className="font-bold text-lg line-clamp-2 min-h-[3rem] tracking-wide hover:text-primary transition-colors">
+                      {product.name}
+                    </h3>
+                  </Link>
 
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
