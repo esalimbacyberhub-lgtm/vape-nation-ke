@@ -29,11 +29,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToHash />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/vape-delivery-nairobi" element={<VapeDeliveryNairobi />} />
           <Route path="/vape-delivery-kisumu" element={<VapeDeliveryKisumu />} />
