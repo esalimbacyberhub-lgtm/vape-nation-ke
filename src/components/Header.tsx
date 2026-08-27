@@ -9,11 +9,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigationItems = [
-    { name: "Home", href: "#" },
-    { name: "Shop", href: "#shop" },
-    { name: "Categories", href: "#categories" },
+    { name: "Home", href: "/" },
+    { name: "Shop", href: "/#shop" },
+    { name: "Categories", href: "/#categories" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
