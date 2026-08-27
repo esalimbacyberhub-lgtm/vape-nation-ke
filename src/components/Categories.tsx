@@ -61,7 +61,9 @@ const Categories = () => {
                   <h4 className="text-xl font-bold mb-3 tracking-wider">{type.name}</h4>
                   <p className="text-muted-foreground mb-4">{type.description}</p>
                   <p className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold mb-4">{type.products}</p>
-                  <Button className="neon-button rounded-lg">Shop Now</Button>
+                  <Button className="neon-button rounded-lg" asChild>
+                    <a href="/#shop">Shop Now</a>
+                  </Button>
                 </div>
               </div>
             ))}
@@ -78,7 +80,9 @@ const Categories = () => {
                 <h4 className="text-lg font-bold mb-2 tracking-wider">{flavor.name}</h4>
                 <p className="text-sm text-muted-foreground mb-3">{flavor.description}</p>
                 <p className="text-primary font-bold mb-3">{flavor.count}</p>
-                <Button variant="outline" size="sm" className="border-primary/30 hover:border-primary/60">Explore</Button>
+                <Button variant="outline" size="sm" className="border-primary/30 hover:border-primary/60" asChild>
+                  <a href="/#shop">Explore</a>
+                </Button>
               </div>
             ))}
           </div>
@@ -99,8 +103,8 @@ const Categories = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="px-8 py-4 neon-button rounded-xl tracking-widest">
-            VIEW ALL PRODUCTS
+          <Button size="lg" className="px-8 py-4 neon-button rounded-xl tracking-widest" asChild>
+            <a href="/#shop">VIEW ALL PRODUCTS</a>
           </Button>
         </div>
       </div>
