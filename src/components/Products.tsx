@@ -139,9 +139,11 @@ const Products = () => {
 
                 {/* Product Info */}
                 <div className="p-5 space-y-3">
-                  <h3 className="font-bold text-lg line-clamp-2 min-h-[3rem] tracking-wide">
-                    {product.name}
-                  </h3>
+                  <Link to={`/product/${product.id}`}>
+                    <h3 className="font-bold text-lg line-clamp-2 min-h-[3rem] tracking-wide hover:text-primary transition-colors">
+                      {product.name}
+                    </h3>
+                  </Link>
 
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">
