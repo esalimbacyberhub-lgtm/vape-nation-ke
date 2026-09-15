@@ -94,8 +94,10 @@ const Admin = () => {
 
     if (user) {
       checkAdmin();
+    } else if (session === null) {
+      navigate("/auth");
     }
-  }, [user, navigate]);
+  }, [user, session, navigate]);
 
   const loadProducts = async () => {
     const { data, error } = await supabase
