@@ -1,114 +1,77 @@
-import { getWhatsAppCatalogUrl } from "@/lib/whatsapp";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Check, Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 
-const VapeDeliveryNairobi = () => {
-  const benefits = [
-    "100% Original Products Only",
-    "Trusted Brands & Fresh Flavors",
-    "Fast Delivery (20–60 mins Nairobi)",
-    "Friendly support & guidance",
-    "Secure mobile payment / M-Pesa"
-  ];
+const WA = "https://wa.me/254742405841";
+const TEL = "tel:+254742405841";
 
-  return (
-    <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Fast Vape Delivery Nairobi | Buy Disposable Vapes Nairobi | Vape Nation KE</title>
-        <meta name="description" content="Fast vape delivery Nairobi – same-day delivery in Kilimani, Westlands, Lavington & CBD. Buy Lost Mary, Elfbar & disposable vapes Kenya. Order via WhatsApp!" />
-        <meta name="keywords" content="fast vape delivery Nairobi, buy vapes Nairobi, disposable vapes Kenya, best vapes Kilimani, vape shop Westlands, Lost Mary Kenya, Elfbar Nairobi" />
-        <meta 
-          name="description" 
-          content="Fast vape delivery in Nairobi. Order premium vapes, pods & e-liquids with same-day delivery in Kilimani, Westlands, CBD, Lavington & more. Call 0742405841." 
-        />
-        <meta name="keywords" content="vape delivery Nairobi, vapes Nairobi, same-day vape delivery, Kilimani vape, Westlands vape shop, CBD vape delivery" />
-      </Helmet>
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Vape Delivery in Nairobi – Fast & Reliable
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Vape Nation KE offers same-day vape delivery anywhere in Nairobi from our base in Kilimani / Yaya.
-              <br />
-              Order premium disposable vapes, vape pens, pods, salts & accessories delivered to your door in minutes.
-            </p>
-          </div>
+const H2 = ({ children }: { children: React.ReactNode }) => (
+  <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-10 neon-text">{children}</h2>
+);
+
+const VapeDeliveryNairobi = () => (
+  <div className="min-h-screen bg-background">
+    <Helmet>
+      <title>Vape Delivery in Nairobi | Vape Nation KE</title>
+      <meta name="description" content="Vape delivery in Nairobi in 10 to 40 minutes. Confirm stock on WhatsApp 0742 405 841, pay on delivery. Fees from KES 200." />
+      <link rel="canonical" href="https://vape-nation-ke.lovable.app/vape-delivery-nairobi" />
+      <meta property="og:title" content="Vape Delivery in Nairobi | Vape Nation KE" />
+      <meta property="og:description" content="Vape delivery in Nairobi in 10 to 40 minutes. Confirm stock on WhatsApp 0742 405 841, pay on delivery. Fees from KES 200." />
+      <meta property="og:url" content="https://vape-nation-ke.lovable.app/vape-delivery-nairobi" />
+    </Helmet>
+    <Header />
+    <main className="pt-32 pb-16 container mx-auto px-4">
+      <article className="max-w-3xl mx-auto text-foreground leading-relaxed" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
+        <h1 className="text-4xl md:text-5xl font-black mb-6 neon-text neon-glow-heading">Vape Delivery in Nairobi</h1>
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href={WA} target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="w-full"><MessageCircle className="h-5 w-5 mr-2" />WhatsApp 0742 405 841</Button>
+          </a>
+          <a href={TEL}>
+            <Button size="lg" variant="outline" className="w-full"><Phone className="h-5 w-5 mr-2" />Call 0742 405 841</Button>
+          </a>
         </div>
-      </section>
+        <p className="text-lg text-muted-foreground">Vape Nation KE delivers vapes across Nairobi by rider. Browse our site, then contact us to confirm what is in stock. You pay when your order arrives.</p>
 
-      {/* Why Choose Us */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Why Choose Us
-            </h2>
-            
-            <Card className="border-primary/20 shadow-lg shadow-primary/10">
-              <CardContent className="p-8 md:p-12">
-                <div className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start space-x-3 group">
-                      <div className="mt-1 flex-shrink-0">
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center group-hover:scale-110 transition-transform">
-                          <Check className="h-4 w-4 text-background" />
-                        </div>
-                      </div>
-                      <p className="text-foreground text-lg">{benefit}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+        <H2>How to Order</H2>
+        <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
+          <li>Browse the products on our site.</li>
+          <li>WhatsApp or call us on 0742 405 841 to confirm what is in stock.</li>
+          <li>We confirm your delivery fee and arrange a rider.</li>
+          <li>Pay on delivery.</li>
+        </ol>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-card/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Order?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              To order, Call / WhatsApp:
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:0742405841">
-                <Button size="lg" className="px-8 py-6 text-lg">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call 0742405841
-                </Button>
-              </a>
-              <a href={getWhatsAppCatalogUrl()} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg border-2">
-                  <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                  </svg>
-                  WhatsApp 0742405841
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <H2>Delivery Fees</H2>
+        <p className="text-muted-foreground">Delivery within Nairobi costs between KES 200 and KES 1,000, depending on your location. We confirm the exact fee on WhatsApp before the rider is dispatched.</p>
 
-      <Footer />
-    </div>
-  );
-};
+        <H2>Delivery Time</H2>
+        <p className="text-muted-foreground">Delivery within Nairobi usually takes between 10 and 40 minutes after your order is confirmed, depending on your location.</p>
+
+        <H2>Areas We Cover</H2>
+        <p className="text-muted-foreground mb-3">We deliver by rider to these areas of Nairobi:</p>
+        <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+          <li>Westlands side: Westlands, Kilimani, Kileleshwa, Lavington, Parklands</li>
+          <li>Central: CBD, Upper Hill</li>
+          <li>South and southwest: Karen, Rongai, South B, South C</li>
+          <li>East: Embakasi, Buruburu</li>
+          <li>North: Kasarani, Roysambu, Ruaka</li>
+        </ul>
+        <p className="text-muted-foreground mt-3">Not sure whether we reach your estate? Send us your location on WhatsApp and we will confirm the fee.</p>
+
+        <H2>Payment</H2>
+        <p className="text-muted-foreground">Payment is made on delivery. You confirm the product with us first, the rider delivers, and you pay when you receive your order. No prepayment is required.</p>
+
+        <H2>Age Requirement</H2>
+        <p className="text-muted-foreground">Buyers must be 18 or older. We do not sell to anyone under 18.</p>
+
+        <H2>Ready to Order?</H2>
+        <p className="text-muted-foreground">WhatsApp or call 0742 405 841 to confirm what is in stock. A rider will deliver within Nairobi, and you pay on delivery.</p>
+      </article>
+    </main>
+    <Footer />
+  </div>
+);
 
 export default VapeDeliveryNairobi;
