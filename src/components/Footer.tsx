@@ -79,6 +79,8 @@ const Footer = () => {
 
           <div className="mt-8 pt-6 border-t border-primary/10 text-sm text-muted-foreground space-y-3" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             <div className="flex flex-wrap items-center justify-center gap-4">
+              <a href="/vape-delivery-nairobi" className="hover:text-primary transition-colors">Vape Delivery Nairobi</a>
+              <span className="text-primary/30">•</span>
               <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
               <span className="text-primary/30">•</span>
               <a href="/delivery-policy" className="hover:text-primary transition-colors">Delivery & Shipping</a>
