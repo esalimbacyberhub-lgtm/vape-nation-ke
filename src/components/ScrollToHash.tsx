@@ -19,6 +19,15 @@ const ScrollToHash = () => {
       const el = document.getElementById(id);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
+        // Re-align after products/images load and shift the layout
+        [900, 1800].forEach((t) =>
+          window.setTimeout(() => {
+            const target = document.getElementById(id);
+            if (target && Math.abs(target.getBoundingClientRect().top) > 120) {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }, t)
+        );
         return;
       }
       if (attempts++ < 20) window.setTimeout(tryScroll, 100);
