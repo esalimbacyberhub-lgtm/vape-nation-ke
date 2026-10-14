@@ -68,6 +68,7 @@ const VapeDeliveryNairobi = () => (
 
         <H2>Ready to Order?</H2>
         <p className="text-muted-foreground">WhatsApp or call 0742 405 841 to confirm what is in stock. A rider will deliver within Nairobi, and you pay on delivery.</p>
+        <p className="text-muted-foreground mt-10">Outside Nairobi? See <a href="/vape-delivery-kenya" className="text-primary underline hover:opacity-80">vape delivery across Kenya</a>.</p>
       </article>
     </main>
     <Footer />

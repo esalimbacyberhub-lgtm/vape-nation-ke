@@ -38,6 +38,7 @@ const DeliveryAreas = () => {
           <div className="text-center">
             <p className="text-lg text-muted-foreground">WhatsApp: <span className="text-primary font-bold">0742405841</span></p>
             <a href="/vape-delivery-nairobi" className="inline-block mt-3 text-primary underline hover:opacity-80">Vape delivery in Nairobi: fees, times & areas →</a>
+            <a href="/vape-delivery-kenya" className="block mt-2 text-primary underline hover:opacity-80">Vape delivery across Kenya by courier →</a>
           </div>
         </div>
       </div>

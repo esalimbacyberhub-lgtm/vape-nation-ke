@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import VapeDeliveryNairobi from "./pages/VapeDeliveryNairobi";
+import VapeDeliveryKenya from "./pages/VapeDeliveryKenya";
 import VapeDeliveryKisumu from "./pages/VapeDeliveryKisumu";
 import VapeDeliveryMombasa from "./pages/VapeDeliveryMombasa";
 import VapeDeliveryNakuru from "./pages/VapeDeliveryNakuru";
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/vape-delivery-nairobi" element={<VapeDeliveryNairobi />} />
+          <Route path="/vape-delivery-kenya" element={<VapeDeliveryKenya />} />
           <Route path="/vape-delivery-kisumu" element={<VapeDeliveryKisumu />} />
           <Route path="/vape-delivery-mombasa" element={<VapeDeliveryMombasa />} />
           <Route path="/vape-delivery-nakuru" element={<VapeDeliveryNakuru />} />

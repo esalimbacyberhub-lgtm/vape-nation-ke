@@ -81,6 +81,8 @@ const Footer = () => {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/vape-delivery-nairobi" className="hover:text-primary transition-colors">Vape Delivery Nairobi</a>
               <span className="text-primary/30">•</span>
+              <a href="/vape-delivery-kenya" className="hover:text-primary transition-colors">Vape Delivery Across Kenya</a>
+              <span className="text-primary/30">•</span>
               <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
               <span className="text-primary/30">•</span>
               <a href="/delivery-policy" className="hover:text-primary transition-colors">Delivery & Shipping</a>
