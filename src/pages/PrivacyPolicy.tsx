@@ -10,6 +10,7 @@ const PrivacyPolicy = () => {
         <title>Privacy Policy | Vape Nation KE – Kenya's Trusted Vape Shop</title>
         <meta name="description" content="Privacy policy for Vape Nation KE – Kenya's trusted vape shop. Buy vapes Nairobi with secure ordering. Your data is protected when shopping disposable vapes Kenya." />
         <meta name="keywords" content="vape shop Kenya privacy, buy vapes Nairobi, disposable vapes Kenya, Vape Nation KE" />
+        <link rel="canonical" href="https://vapenationke.co.ke/privacy-policy" />
       </Helmet>
       
       <Header />

@@ -10,6 +10,7 @@ const DeliveryPolicy = () => {
         <title>Delivery Policy | Fast Vape Delivery Nairobi & Kenya | Vape Nation KE</title>
         <meta name="description" content="Fast vape delivery Nairobi – same-day delivery Kilimani, Westlands & nationwide. Buy disposable vapes Kenya with quick shipping. Delivery policy details." />
         <meta name="keywords" content="fast vape delivery Nairobi, disposable vapes Kenya, vape delivery Kilimani, vape shop Westlands, vape shipping Kenya" />
+        <link rel="canonical" href="https://vapenationke.co.ke/delivery-policy" />
       </Helmet>
       
       <Header />

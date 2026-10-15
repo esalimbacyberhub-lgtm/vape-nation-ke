@@ -8,7 +8,7 @@ import { Phone, MessageCircle } from "lucide-react";
 const WA = "https://wa.me/254742405841";
 const TEL = "tel:+254742405841";
 const DESC = "Vape delivery to any town in Kenya by courier, about one day. Confirm stock on WhatsApp 0742 405 841. Fees mostly KES 200 to 500.";
-const URL = "https://vape-nation-ke.lovable.app/vape-delivery-kenya";
+const URL = "https://vapenationke.co.ke/vape-delivery-kenya";
 
 const H2 = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-10 neon-text">{children}</h2>

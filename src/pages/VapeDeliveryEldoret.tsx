@@ -15,6 +15,7 @@ const VapeDeliveryEldoret = () => {
           content="Buy disposable vapes in Eldoret – Lost Mary, Elfbar & premium vape pods. Fast delivery across Eldoret. Kenya's trusted vape shop. Call 0742405841." 
         />
         <meta name="keywords" content="vape delivery Eldoret, disposable vapes Kenya, buy vapes Eldoret, Lost Mary Kenya, Elfbar Nairobi, vape shop Eldoret" />
+        <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-eldoret" />
       </Helmet>
       <Header />
       

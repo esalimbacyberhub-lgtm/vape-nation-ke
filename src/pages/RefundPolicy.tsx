@@ -11,6 +11,7 @@ const RefundPolicy = () => {
         <title>Refund & Replacement Policy | Vape Nation KE – Trusted Vape Shop Kenya</title>
         <meta name="description" content="Vape Nation KE refund policy – 100% original Lost Mary, Elfbar & disposable vapes Kenya. Quality guarantee on all products. Trusted vape shop Nairobi." />
         <meta name="keywords" content="vape refund Kenya, disposable vapes Kenya, Lost Mary Kenya, Elfbar Nairobi, trusted vape shop Nairobi" />
+        <link rel="canonical" href="https://vapenationke.co.ke/refund-policy" />
       </Helmet>
       
       <Header />

@@ -15,6 +15,7 @@ const VapeDeliveryMombasa = () => {
           content="Buy disposable vapes in Mombasa – Lost Mary, Elfbar & premium pods. Fast vape delivery Mombasa coast. Trusted vape shop Kenya. Call 0742405841." 
         />
         <meta name="keywords" content="vape delivery Mombasa, disposable vapes Kenya, buy vapes Mombasa, Lost Mary Kenya, Elfbar Nairobi, vape shop Mombasa" />
+        <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-mombasa" />
       </Helmet>
       <Header />
       

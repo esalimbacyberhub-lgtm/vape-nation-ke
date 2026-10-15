@@ -15,6 +15,7 @@ const VapeDeliveryNakuru = () => {
           content="Buy disposable vapes in Nakuru – Lost Mary, Elfbar & premium vape pods. Fast delivery Nakuru town. Kenya's trusted vape shop. Call 0742405841." 
         />
         <meta name="keywords" content="vape delivery Nakuru, disposable vapes Kenya, buy vapes Nakuru, Lost Mary Kenya, Elfbar Nairobi, vape shop Nakuru" />
+        <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-nakuru" />
       </Helmet>
       <Header />
       

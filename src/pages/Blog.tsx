@@ -47,7 +47,7 @@ const Blog = () => {
           content="Read the latest vaping tips, product reviews, and guides from Vape Nation KE. Stay updated on disposable vapes, e-liquids, and vape culture in Kenya."
         />
         <meta name="keywords" content="vape blog Kenya, vaping tips Nairobi, vape guides, disposable vape reviews, e-liquid Kenya, vape news Africa" />
-        <link rel="canonical" href={`https://vape-nation-ke.lovable.app/blog${page > 1 ? `?page=${page}` : ""}`} />
+        <link rel="canonical" href={`https://vapenationke.co.ke/blog${page > 1 ? `?page=${page}` : ""}`} />
       </Helmet>
       <Header />
 
