@@ -15,6 +15,7 @@ const VapeDeliveryKisumu = () => {
           content="Buy disposable vapes in Kisumu – Lost Mary, Elfbar & premium pods with fast delivery. Kenya's trusted vape shop. Order now – Call 0742405841." 
         />
         <meta name="keywords" content="vape delivery Kisumu, disposable vapes Kenya, buy vapes Kisumu, Lost Mary Kenya, Elfbar Nairobi, vape shop Kisumu" />
+        <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-kisumu" />
       </Helmet>
       <Header />
       

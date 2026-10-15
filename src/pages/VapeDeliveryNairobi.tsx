@@ -16,10 +16,10 @@ const VapeDeliveryNairobi = () => (
     <Helmet>
       <title>Vape Delivery in Nairobi | Vape Nation KE</title>
       <meta name="description" content="Vape delivery in Nairobi in 10 to 40 minutes. Confirm stock on WhatsApp 0742 405 841, pay on delivery. Fees from KES 200." />
-      <link rel="canonical" href="https://vape-nation-ke.lovable.app/vape-delivery-nairobi" />
+      <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-nairobi" />
       <meta property="og:title" content="Vape Delivery in Nairobi | Vape Nation KE" />
       <meta property="og:description" content="Vape delivery in Nairobi in 10 to 40 minutes. Confirm stock on WhatsApp 0742 405 841, pay on delivery. Fees from KES 200." />
-      <meta property="og:url" content="https://vape-nation-ke.lovable.app/vape-delivery-nairobi" />
+      <meta property="og:url" content="https://vapenationke.co.ke/vape-delivery-nairobi" />
     </Helmet>
     <Header />
     <main className="pt-32 pb-16 container mx-auto px-4">

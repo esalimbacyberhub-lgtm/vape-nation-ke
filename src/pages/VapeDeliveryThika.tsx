@@ -15,6 +15,7 @@ const VapeDeliveryThika = () => {
           content="Buy disposable vapes in Thika – Lost Mary, Elfbar & premium pods. Fast vape delivery Thika town. Kenya's trusted vape shop. Call 0742405841." 
         />
         <meta name="keywords" content="vape delivery Thika, disposable vapes Kenya, buy vapes Thika, Lost Mary Kenya, Elfbar Nairobi, vape shop Thika" />
+        <link rel="canonical" href="https://vapenationke.co.ke/vape-delivery-thika" />
       </Helmet>
       <Header />
       
