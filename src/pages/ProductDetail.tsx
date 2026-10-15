@@ -51,7 +51,7 @@ const ProductDetail = () => {
               : "Premium disposable vapes with same-day delivery in Nairobi."
           }
         />
-        <link rel="canonical" href={`https://vapenationke.co.ke/product/`} />
+        <link rel="canonical" href={`https://vapenationke.co.ke/product/${id}`} />
       </Helmet>
       <Header />
 

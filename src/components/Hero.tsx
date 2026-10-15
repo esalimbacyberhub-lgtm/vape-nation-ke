@@ -68,9 +68,9 @@ const Hero = () => {
             <span className="neon-text neon-glow-heading">VAPE</span>{" "}
             <span className="text-foreground">NATION</span>
           </h1>
-          <h2 className={`text-2xl md:text-3xl font-bold mb-6 transition-all duration-700 delay-100 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className={`text-2xl md:text-3xl font-bold mb-6 transition-all duration-700 delay-100 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <span className="neon-text-purple">KE</span>
-          </h2>
+          </div>
 
           {/* Subtitle */}
           <p className={`text-xl md:text-2xl text-foreground mb-4 font-semibold transition-all duration-700 delay-200 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
