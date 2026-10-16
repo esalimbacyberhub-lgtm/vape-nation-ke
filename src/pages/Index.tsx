@@ -15,6 +15,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Vape Nation KE | Premium Vape Delivery Nairobi - Same Day</title>
+        <meta name="description" content="Buy premium disposable vapes in Nairobi with same-day delivery. Kilimani HQ. Elfbar, Lost Mary, Solo Bar, Vapengin & more. Call/WhatsApp 0742405841" />
         <meta name="keywords" content="vape delivery Nairobi, disposable vapes Kenya, Elfbar Nairobi, Lost Mary Kenya, vape shop Kilimani, same day vape delivery, buy vapes Nairobi, Solo Bar Kenya, Vapengin Kenya" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Vape Nation KE | Premium Vape Delivery Nairobi - Same Day" />
