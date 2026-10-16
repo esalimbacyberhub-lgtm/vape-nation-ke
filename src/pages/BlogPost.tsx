@@ -51,11 +51,15 @@ const BlogPost = () => {
     post.image_url ||
     `https://vapenationke.co.ke/og/${post.slug}.jpg`;
 
+  const description = post.slug === "elfbar-kenya-where-to-buy-original-elfbar-nairobi"
+    ? "Find out where to buy original Elfbar in Nairobi, how to spot counterfeits, and which popular Elfbar models are available in Kenya."
+    : post.meta_description || post.excerpt;
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>{post.meta_title || post.title} | Vape Nation KE Blog</title>
-        <meta name="description" content={post.meta_description || post.excerpt} />
+        <meta name="description" content={description} />
         <link rel="canonical" href={`https://vapenationke.co.ke/blog/${post.slug}`} />
         {/* Open Graph */}
         <meta property="og:type" content="article" />
